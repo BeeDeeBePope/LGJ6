@@ -1,24 +1,29 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Player;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour, IMovementScript
+namespace Player
 {
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerMovement : MonoBehaviour, IMovementScript
     {
-        
-    }
+        public Vector3 CurrentDirection;
+        public float Speed;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        private void Awake()
+        {
+            if (CurrentDirection == Vector3.zero)
+            {
+                CurrentDirection = transform.forward;
+            }
+        }
 
-    public void SetDirection(Vector2 direction)
-    {
-        
+        private void Update()
+        {
+            transform.position += CurrentDirection * Speed * Time.deltaTime;
+        }
+
+        public void SetDirection(Vector2 direction)
+        {
+            CurrentDirection.x = direction.x;
+            CurrentDirection.z = direction.y;
+        }
     }
 }
