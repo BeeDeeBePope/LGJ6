@@ -16,4 +16,9 @@ public class PlayerMovement : MonoBehaviour, IMovementScript
     {
         
     }
+
+    public void SetDirection(Vector2 direction)
+    {
+        
+    }
 }
