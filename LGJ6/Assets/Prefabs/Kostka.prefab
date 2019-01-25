@@ -285,8 +285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 382083699156606115}
-  - component: {fileID: 382083699156606114}
-  - component: {fileID: 382083699156606117}
+  - component: {fileID: 8219238489384144912}
   m_Layer: 0
   m_Name: Kostka
   m_TagString: Untagged
@@ -314,7 +313,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &382083699156606114
+--- !u!114 &8219238489384144912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,21 +322,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 382083699156606116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70cee585b4a9834f876fc1041869aec, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a6a417d1375a2e4fb3c4452bba685a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &382083699156606117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382083699156606116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 199e9e650cc344f4f987039502271d34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &382083699306600272
 GameObject:
   m_ObjectHideFlags: 0
