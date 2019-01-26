@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: ad80ec3adfb23ec4b87deddf69a23342
+ScriptedImporter:
+  fileIDToRecycleName:
+    100016: Layer 1_GO/Layer 1_GO
+    100018: Layer 1_GO/Layer 1_GO/GLOWA
+    100020: Layer 1_GO/Layer 1_GO/Layer 1
+    100022: Layer 1_GO/Layer 1_GO/Layer 2
+    100024: Layer 1_GO/Layer 1_GO/NOGA PRZEDNIA
+    100026: Layer 1_GO/Layer 1_GO/NOGA PRZEDNIA TYL
+    100028: Layer 1_GO/Layer 1_GO/NOGA TYLNA PRZOD
+    100030: Layer 1_GO/Layer 1_GO/NOGA TYLNIA TYL
+    100032: Layer 1_GO/Layer 1_GO/OGON
+    400016: Layer 1_GO/Layer 1_GO/Transform
+    400018: Layer 1_GO/Layer 1_GO/GLOWA/Transform
+    400020: Layer 1_GO/Layer 1_GO/Layer 1/Transform
+    400022: Layer 1_GO/Layer 1_GO/Layer 2/Transform
+    400024: Layer 1_GO/Layer 1_GO/NOGA PRZEDNIA/Transform
+    400026: Layer 1_GO/Layer 1_GO/NOGA PRZEDNIA TYL/Transform
+    400028: Layer 1_GO/Layer 1_GO/NOGA TYLNA PRZOD/Transform
+    400030: Layer 1_GO/Layer 1_GO/NOGA TYLNIA TYL/Transform
+    400032: Layer 1_GO/Layer 1_GO/OGON/Transform
+    2800000: pies2
+    21200014: Layer 1_GO/Layer 1_GO/GLOWA/SpriteRenderer
+    21200016: Layer 1_GO/Layer 1_GO/Layer 1/SpriteRenderer
+    21200018: Layer 1_GO/Layer 1_GO/Layer 2/SpriteRenderer
+    21200020: Layer 1_GO/Layer 1_GO/NOGA PRZEDNIA/SpriteRenderer
+    21200022: Layer 1_GO/Layer 1_GO/NOGA PRZEDNIA TYL/SpriteRenderer
+    21200024: Layer 1_GO/Layer 1_GO/NOGA TYLNA PRZOD/SpriteRenderer
+    21200026: Layer 1_GO/Layer 1_GO/NOGA TYLNIA TYL/SpriteRenderer
+    21200028: Layer 1_GO/Layer 1_GO/OGON/SpriteRenderer
+    21300014: NOGA TYLNA PRZOD
+    21300016: NOGA PRZEDNIA
+    21300018: OGON
+    21300020: GLOWA
+    21300022: Layer 2
+    21300024: NOGA TYLNIA TYL
+    21300026: NOGA PRZEDNIA TYL
+    21300028: Layer 1
+    100100002: Layer 1_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: NOGA TYLNA PRZOD
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 346
+      width: 287
+      height: 457
+    spriteID: d27311a97927c2541b17c225c790cd1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1075, y: 230}
+  - name: NOGA PRZEDNIA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 345
+      width: 164
+      height: 463
+    spriteID: 0998eb647032c7344b4af0ed7aa52b25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -118, y: 216}
+  - name: OGON
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 839
+      y: 4
+      width: 152
+      height: 330
+    spriteID: c5d511471c48c8a4fa57f6946522a373
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -375, y: -504}
+  - name: GLOWA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 544
+      y: 3
+      width: 287
+      height: 248
+    spriteID: f518eec9ab13a074dbef004b506c7332
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -8, y: -711}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3
+      y: 5
+      width: 532
+      height: 334
+    spriteID: 0d453794e1cb8a34eaf1a77f4e888c9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -652, y: -379}
+  - name: NOGA TYLNIA TYL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 299
+      y: 346
+      width: 231
+      height: 401
+    spriteID: 8b8abb0c56a0d23479453e25916e619f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -685, y: 204}
+  - name: NOGA PRZEDNIA TYL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 710
+      y: 346
+      width: 151
+      height: 285
+    spriteID: 03624bfd83db9a14ab3d8cf2623d52ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -95, y: 193}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 817
+      width: 0
+      height: 0
+    spriteID: db608062c0470854a9480631bcad3a64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1382, y: -263}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 1024
+  documentSize: {x: 1920, y: 1080}
+  textureActualWidth: 1024
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: NOGA TYLNA PRZOD
+    spriteName: NOGA TYLNA PRZOD
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d27311a97927c2541b17c225c790cd1b
+    layerID: 43
+    mosaicPosition: {x: 4, y: 346}
+  - name: NOGA PRZEDNIA
+    spriteName: NOGA PRZEDNIA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0998eb647032c7344b4af0ed7aa52b25
+    layerID: 45
+    mosaicPosition: {x: 538, y: 346}
+  - name: OGON
+    spriteName: OGON
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c5d511471c48c8a4fa57f6946522a373
+    layerID: 49
+    mosaicPosition: {x: 839, y: 4}
+  - name: GLOWA
+    spriteName: GLOWA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f518eec9ab13a074dbef004b506c7332
+    layerID: 46
+    mosaicPosition: {x: 544, y: 4}
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0d453794e1cb8a34eaf1a77f4e888c9a
+    layerID: 41
+    mosaicPosition: {x: 4, y: 4}
+  - name: NOGA TYLNIA TYL
+    spriteName: NOGA TYLNIA TYL
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8b8abb0c56a0d23479453e25916e619f
+    layerID: 53
+    mosaicPosition: {x: 299, y: 346}
+  - name: NOGA PRZEDNIA TYL
+    spriteName: NOGA PRZEDNIA TYL
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 03624bfd83db9a14ab3d8cf2623d52ad
+    layerID: 51
+    mosaicPosition: {x: 710, y: 346}
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: db608062c0470854a9480631bcad3a64
+    layerID: 38
+    mosaicPosition: {x: 538, y: 817}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0

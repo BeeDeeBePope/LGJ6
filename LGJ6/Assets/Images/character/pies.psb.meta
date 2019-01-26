@@ -123,10 +123,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 299
-      y: 714
+      x: 4
+      y: 1243
       width: 287
-      height: 243
+      height: 273
     spriteID: 9fac56de79e34c9488e41356665e3317
     spriteBone: []
     spriteOutline: []
@@ -136,7 +136,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -253, y: -8}
+    uvTransform: {x: -541, y: 552}
   - name: tlow
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -187,7 +187,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1
-      y: 1189
+      y: 1525
       width: 161
       height: 463
     spriteID: 00dc17e85e8baa44eb97b66e9a83a6f7
@@ -199,7 +199,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -653, y: 1062}
+    uvTransform: {x: -653, y: 1398}
   - name: ogonek
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -208,7 +208,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 299
-      y: 965
+      y: 1054
       width: 152
       height: 330
     spriteID: 0339e439db911a646b064e8040c15df8
@@ -220,7 +220,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -898, y: 455}
+    uvTransform: {x: -898, y: 544}
   - name: noga tylnia tyl
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -228,8 +228,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1663
+      x: 299
+      y: 717
       width: 217
       height: 332
     spriteID: 48103f4514550de41bd8b546e3fe9c96
@@ -241,7 +241,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1003, y: 1524}
+    uvTransform: {x: -708, y: 578}
   - name: noga przednia tyl
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -250,7 +250,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 299
-      y: 1303
+      y: 1392
       width: 151
       height: 285
     spriteID: c37da7db1312ded4eabeff0b7384db95
@@ -262,7 +262,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -501, y: 1149}
+    uvTransform: {x: -501, y: 1238}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -284,7 +284,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 9fac56de79e34c9488e41356665e3317
     layerID: 22
-    mosaicPosition: {x: 299, y: 714}
+    mosaicPosition: {x: 4, y: 1189}
   - name: tlow
     spriteName: tlow
     isGroup: 0
@@ -305,28 +305,28 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 00dc17e85e8baa44eb97b66e9a83a6f7
     layerID: 10
-    mosaicPosition: {x: 4, y: 1189}
+    mosaicPosition: {x: 4, y: 1525}
   - name: ogonek
     spriteName: ogonek
     isGroup: 0
     parentIndex: -1
     spriteID: 0339e439db911a646b064e8040c15df8
     layerID: 20
-    mosaicPosition: {x: 299, y: 965}
+    mosaicPosition: {x: 299, y: 1054}
   - name: noga tylnia tyl
     spriteName: noga tylnia tyl
     isGroup: 0
     parentIndex: -1
     spriteID: 48103f4514550de41bd8b546e3fe9c96
     layerID: 18
-    mosaicPosition: {x: 4, y: 1660}
+    mosaicPosition: {x: 299, y: 714}
   - name: noga przednia tyl
     spriteName: noga przednia tyl
     isGroup: 0
     parentIndex: -1
     spriteID: c37da7db1312ded4eabeff0b7384db95
     layerID: 16
-    mosaicPosition: {x: 299, y: 1303}
+    mosaicPosition: {x: 299, y: 1392}
   characterData:
     bones: []
     parts: []
