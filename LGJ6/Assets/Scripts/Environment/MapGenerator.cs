@@ -39,17 +39,17 @@ namespace Environment
             mapColor.RemoveAt(i);
             TailMapGeneration(frontMap);
             // Spawn First Portal
-            PortalScript portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
-            portal.Direction = Direction.Up;
-            portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, 4.75f);
+            //PortalScript portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
+            //portal.Direction = Direction.Up;
+            //portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, 4.75f);
 
-            portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
-            portal.Direction = Direction.Down;
-            portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, -4.75f);
+            //portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
+            //portal.Direction = Direction.Down;
+            //portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, -4.75f);
 
-            portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
-            portal.Direction = Direction.Right;
-            portal.transform.localPosition = new Vector3(4.75f, 0, Random.Range(-4.5f, 4.5f));
+            //portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
+            //portal.Direction = Direction.Right;
+            //portal.transform.localPosition = new Vector3(4.75f, 0, Random.Range(-4.5f, 4.5f));
 
             BorderGenereting();
         }
@@ -92,26 +92,37 @@ namespace Environment
             int i = Random.Range(0, mapColor.Count - UseMaterial.Count);
             border.GetComponent<MeshRenderer>().material = mapColor[i];
             TailMapGeneration(border);
-            // Spawn First Portal
-            PortalScript portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
-            portal.Direction = Direction.Up;
-            portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, 4.75f);
-            if (direction == Direction.Down) lastPortal.Destination = portal;
 
-            portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
-            portal.Direction = Direction.Down;
-            portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, -4.75f);
-            if (direction == Direction.Up) lastPortal.Destination = portal;
+            PortalScript nextportal = null;
+            foreach(PortalScript game in border.GetComponentsInChildren<PortalScript>())
+            {
+                if (nextportal == null) nextportal = game;
+                if(game.transform.position.y > nextportal.transform.position.y)
+                {
+                    nextportal = game;
+                }
+            }
+            lastPortal.Destination = nextportal;
+            //// Spawn First Portal
+            //PortalScript portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
+            //portal.Direction = Direction.Up;
+            //portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, 4.75f);
+            //if (direction == Direction.Down) lastPortal.Destination = portal;
 
-            portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
-            portal.Direction = Direction.Right;
-            portal.transform.localPosition = new Vector3(4.75f, 0, Random.Range(-4.5f, 4.5f));
-            if (direction == Direction.Left) lastPortal.Destination = portal;
+            //portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
+            //portal.Direction = Direction.Down;
+            //portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, -4.75f);
+            //if (direction == Direction.Up) lastPortal.Destination = portal;
 
-            portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
-            portal.Direction = Direction.Left;
-            portal.transform.localPosition = new Vector3(-4.75f, 0, Random.Range(-4.5f, 4.5f));
-            if (direction == Direction.Right) lastPortal.Destination = portal;
+            //portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
+            //portal.Direction = Direction.Right;
+            //portal.transform.localPosition = new Vector3(4.75f, 0, Random.Range(-4.5f, 4.5f));
+            //if (direction == Direction.Left) lastPortal.Destination = portal;
+
+            //portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
+            //portal.Direction = Direction.Left;
+            //portal.transform.localPosition = new Vector3(-4.75f, 0, Random.Range(-4.5f, 4.5f));
+            //if (direction == Direction.Right) lastPortal.Destination = portal;
         }
 
         public void ChangeMainBorder(GameObject nextMainBorder)
@@ -175,15 +186,19 @@ namespace Environment
             int i = MapBuilder.Instance.SearchByColor(border.GetComponent<MeshRenderer>().materials[0].color);
             if (i == -1) i=0;
 
-            Debug.Log("A");
-
             for (int j = 0; j < 24; j++)
             {
                 for (int k = 0; k < 24; k++)
                 {
                     GameObject tile = Instantiate(MapBuilder.Instance.bioms[i].sprites[MapBuilder.Instance.blockColors[0, j, k]], border.transform);
-                    //tile.transform.scal = new Vector3(.5f, .5f, .5f);
                     tile.transform.localPosition = new Vector3(-11.5f + k, 0, 11.5f + -j);
+                    if(MapBuilder.Instance.blockColors[0, j, k] == 2)
+                    {
+                        if(j == 23)tile.GetComponentInChildren<PortalScript>().Direction = Direction.Down;
+                        else if (j == 0) tile.GetComponentInChildren<PortalScript>().Direction = Direction.Up;
+                        else if (k == 23) tile.GetComponentInChildren<PortalScript>().Direction = Direction.Right;
+                        else if (k == 0) tile.GetComponentInChildren<PortalScript>().Direction = Direction.Left;
+                    }
                 }
             }
         }
