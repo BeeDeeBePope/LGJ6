@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        Player.Movement.ResetSpeed();
         Player.ShowPlayer();
     }
 
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         Destroy(spawnedBoard);
+        Player.Movement.ResetSpeed();
         Player.ShowPlayer();
         spawnedBoard = Instantiate(board);
     }

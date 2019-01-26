@@ -72,6 +72,7 @@ namespace Environment.MapElements
             pos.x = transform.position.x;
             pos.z = transform.position.z;
             player.transform.position = pos;
+            player.GetComponent<PlayerMovement>().SpeedUP();
 
             PreVisuals.SetActive(false);
             PostVisuals.SetActive(true);

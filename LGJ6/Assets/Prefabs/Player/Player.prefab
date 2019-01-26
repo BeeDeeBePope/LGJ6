@@ -258,6 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentDirection: {x: 0, y: 0, z: 0}
   Speed: 3
+  increaseSpeed: 0.1
 --- !u!114 &8187648150654504752
 MonoBehaviour:
   m_ObjectHideFlags: 0
