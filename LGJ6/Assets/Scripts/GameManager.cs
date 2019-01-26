@@ -7,9 +7,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public UiManager UiManager;
 
-    public PlayerControler Player;
+
+    [HideInInspector] public UiManager UiManager;
+    [HideInInspector] public PlayerControler Player;
 
     private Coroutine coroutine;
 
@@ -18,6 +19,26 @@ public class GameManager : MonoBehaviour
         Instance = this;
         UiManager = FindObjectOfType<UiManager>();
         Player = FindObjectOfType<PlayerControler>();
+    }
+
+    private void Start()
+    {
+        //Player.HidePlayer();
+    }
+
+    public void StartGame()
+    {
+        Player.ShowPlayer();
+    }
+
+    public void PauseGame()
+    {
+    }
+
+    public void EndGame()
+    {
+        Player.Movement.enabled = false;
+        UiManager.ShowEndGame();
     }
 
     public void StartCountingPoints()
