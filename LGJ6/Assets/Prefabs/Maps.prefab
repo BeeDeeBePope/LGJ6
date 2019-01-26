@@ -43,3 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e6712ecc4699d4199e68b3aa2b54a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bioms:
+  - identitycolor: {r: 1, g: 0, b: 0, a: 1}
+    sprites:
+    - {fileID: 7262160129470152600, guid: 31022aa1953ca494bb0b4a9ea39ab619, type: 3}
+    - {fileID: 7262160129470152600, guid: 89eae821276f51945b81bc4ea990a78c, type: 3}

@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         Player.ShowPlayer();
+        Player.transform.position = new Vector3(0,12,0);
     }
 
     public void PauseGame()
