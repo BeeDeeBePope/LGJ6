@@ -30,7 +30,6 @@ public class CubeRotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        unityEvent.Invoke();
     }
 
     public void Rotate(Vector2 direction)
