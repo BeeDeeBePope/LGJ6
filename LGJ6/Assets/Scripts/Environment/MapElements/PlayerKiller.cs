@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Player;
+using UnityEngine;
 
 namespace Environment.MapElements
 {
@@ -8,7 +9,8 @@ namespace Environment.MapElements
         {
             if (other.CompareTag("Player"))
             {
-                
+                PlayerControler pl = other.GetComponent<PlayerControler>();
+                pl.Die();
             }
         }
     }
