@@ -6,7 +6,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
+    public GameObject board;
+    private GameObject spawnedBoard;
 
 
     [HideInInspector] public UiManager UiManager;
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
         UiManager = FindObjectOfType<UiManager>();
         Player = FindObjectOfType<PlayerControler>();
+        spawnedBoard = Instantiate(board);
     }
 
     private void Start()
@@ -47,6 +49,12 @@ public class GameManager : MonoBehaviour
         {
             coroutine = StartCoroutine(CountPoints());
         }
+    }
+
+    public void Restart()
+    {
+        Destroy(spawnedBoard);
+        spawnedBoard = Instantiate(board);
     }
 
     private IEnumerator CountPoints()
