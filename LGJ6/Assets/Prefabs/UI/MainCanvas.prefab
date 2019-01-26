@@ -566,6 +566,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndGame
       objectReference: {fileID: 0}
+    - target: {fileID: 3049640165705540787, guid: 63b2152938df22f4fa5960a88760dec3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 967291138572667382, guid: 63b2152938df22f4fa5960a88760dec3,
         type: 3}
       propertyPath: m_LocalPosition.x
