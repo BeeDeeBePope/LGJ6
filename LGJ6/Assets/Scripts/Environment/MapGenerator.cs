@@ -38,18 +38,37 @@ namespace Environment
             UseMaterial.Add(mapColor[i]);
             mapColor.RemoveAt(i);
             TailMapGeneration(frontMap);
-            // Spawn First Portal
-            //PortalScript portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
-            //portal.Direction = Direction.Up;
-            //portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, 4.75f);
 
-            //portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
-            //portal.Direction = Direction.Down;
-            //portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, -4.75f);
 
-            //portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
-            //portal.Direction = Direction.Right;
-            //portal.transform.localPosition = new Vector3(4.75f, 0, Random.Range(-4.5f, 4.5f));
+            List<GameObject> portals = new List<GameObject>();
+            foreach (Transform gameobject in frontMap.GetComponentsInChildren<Transform>())
+            {
+                if (gameobject.CompareTag("Portal")) portals.Add(gameobject.gameObject);
+            }
+            int startowyPortal = Random.Range(0, 4);
+
+            
+
+            switch (portals[startowyPortal].GetComponent<PortalScript>().Direction)
+            {
+                case Direction.Up:
+                    GameManager.Instance.Player.Movement.SetDirection(Vector2.down);
+                    break;
+                case Direction.Down:
+                    GameManager.Instance.Player.Movement.SetDirection(Vector2.up);
+                    break;
+                case Direction.Left:
+                    GameManager.Instance.Player.Movement.SetDirection(Vector2.right);
+                    break;
+                case Direction.Right:
+                    GameManager.Instance.Player.Movement.SetDirection(Vector2.left);
+                    break;
+            }
+            portals[startowyPortal].GetComponent<PortalScript>().PreVisuals.SetActive(false);
+            portals[startowyPortal].GetComponent<PortalScript>().PostVisuals.SetActive(true);
+            Destroy(portals[startowyPortal].GetComponent<PortalScript>());
+
+            GameManager.Instance.Player.transform.position = portals[startowyPortal].transform.position;
 
             BorderGenereting();
         }
@@ -167,13 +186,15 @@ namespace Environment
             int i = MapBuilder.Instance.SearchByColor(border.GetComponent<MeshRenderer>().materials[0].color);
             if (i == -1) i=0;
 
+            int which = Random.Range(0, 5);
+                
             for (int j = 0; j < 24; j++)
             {
                 for (int k = 0; k < 24; k++)
                 {
-                    GameObject tile = Instantiate(MapBuilder.Instance.bioms[i].sprites[MapBuilder.Instance.blockColors[0, j, k]], border.transform);
+                    GameObject tile = Instantiate(MapBuilder.Instance.bioms[i].sprites[MapBuilder.Instance.blockColors[which, j, k]], border.transform);
                     tile.transform.localPosition = new Vector3(-11.5f + k, 0, 11.5f + -j);
-                    if(MapBuilder.Instance.blockColors[0, j, k] == 2)
+                    if(MapBuilder.Instance.blockColors[which, j, k] == 2)
                     {
                         if(j == 23)tile.GetComponentInChildren<PortalScript>().Direction = Direction.Down;
                         else if (j == 0) tile.GetComponentInChildren<PortalScript>().Direction = Direction.Up;

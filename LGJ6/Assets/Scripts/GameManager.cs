@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         Player.ShowPlayer();
-        Player.transform.position = new Vector3(.5f,12,0.5f);
     }
 
     public void PauseGame()
@@ -56,7 +55,6 @@ public class GameManager : MonoBehaviour
     {
         Destroy(spawnedBoard);
         Player.ShowPlayer();
-        Player.transform.position = new Vector3(.5f, 12, 0.5f);
         spawnedBoard = Instantiate(board);
     }
 
