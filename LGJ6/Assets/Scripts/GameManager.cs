@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        //Player.HidePlayer();
+        Player.HidePlayer();
     }
 
     public void StartGame()
