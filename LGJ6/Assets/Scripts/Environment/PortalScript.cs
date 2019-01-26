@@ -1,11 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Environment
 {
     public class PortalScript : MonoBehaviour
     {
         public PortalScript Destination;
-        
+
+        public Direction Direction;
+
         private bool arrived;
 
         private void Awake()
@@ -25,7 +28,25 @@ namespace Environment
             if (other.CompareTag("Player"))
             {
                 Despawn(other.gameObject);
-                Destination.Spawn(other.gameObject);
+                CubeRotator.Instance.Rotate(DirectionToVector());
+                CubeRotator.Instance.unityEvent.AddListener(() => Destination.Spawn(other.gameObject));
+            }
+        }
+
+        private Vector2 DirectionToVector()
+        {
+            switch (Direction)
+            {
+                case Direction.Up:
+                    return Vector2.up;
+                case Direction.Down:
+                    return Vector2.down;
+                case Direction.Left:
+                    return Vector2.left;
+                case Direction.Right:
+                    return Vector2.right;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
         }
 
@@ -44,5 +65,13 @@ namespace Environment
             player.transform.position = pos;
             player.SetActive(true);
         }
+    }
+
+    public enum Direction
+    {
+        Up,
+        Down,
+        Left,
+        Right
     }
 }
