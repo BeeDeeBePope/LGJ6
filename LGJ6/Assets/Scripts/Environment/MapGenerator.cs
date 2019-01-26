@@ -120,6 +120,20 @@ namespace Environment
             frontMap = nextMainBorder;
             nextMainBorder.transform.SetParent(frontLocationMap);
 
+            int i=0;
+            for (int j =0; j< mapColor.Count;j++)
+            {
+                if(mapColor[j].color == nextMainBorder.GetComponent<MeshRenderer>().materials[0].color)
+                {
+                    i = j;
+                    break;
+                }
+            }
+
+            UseMaterial.Add(mapColor[i]);
+            mapColor.RemoveAt(i);
+            if (UseMaterial.Count == 3) UseMaterial.RemoveAt(0);
+
             if (leftMap == nextMainBorder) leftMap = null;
             else if (rightMap == nextMainBorder) rightMap = null;
             else if (upMap == nextMainBorder) upMap = null;

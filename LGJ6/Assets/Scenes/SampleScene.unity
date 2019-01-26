@@ -250,6 +250,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d4e238f6be9fa4392a7819b5de770c, type: 3}
+--- !u!1 &2032610524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6837144478397655302, guid: b517719be0e8ab94882791ba3772e333,
+    type: 3}
+  m_PrefabInstance: {fileID: 6837144479639006580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2032610525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032610524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3347e168c2dc96e4cb35dec53b849cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  last: {fileID: 0}
+  mapGenerator: {fileID: 0}
+  planes: []
 --- !u!1001 &6837144479639006580
 PrefabInstance:
   m_ObjectHideFlags: 0
