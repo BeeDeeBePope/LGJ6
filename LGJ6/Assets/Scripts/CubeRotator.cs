@@ -4,69 +4,72 @@ using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
 
-public class CubeRotator : MonoBehaviour
+namespace Environment
 {
-    public static CubeRotator Instance;
-    public UnityEvent unityEvent;
-
-    GameObject last;
-
-    public List<GameObject> planes;
-
-    // Start is called before the first frame update
-    void Start()
+    public class CubeRotator : MonoBehaviour
     {
-        Instance = this;
-        planes = new List<GameObject>();
-        Transform[] trans = GetComponentsInChildren<Transform>();
-        foreach(Transform transform in trans)
+        public static CubeRotator Instance;
+        public UnityEvent unityEvent;
+
+        public GameObject last;
+        public MapGenerator mapGenerator;
+
+        public List<GameObject> planes;
+
+        // Start is called before the first frame update
+        void Start()
         {
-                planes.Add(transform.gameObject);
+            Instance = this;
+            mapGenerator = GetComponent<MapGenerator>();
+
+            planes = new List<GameObject>();
+            Transform[] trans = GetComponentsInChildren<Transform>();
+            foreach (Transform transform in trans)
+            {
+                if (transform.CompareTag("Plane")) planes.Add(transform.gameObject);
+            }
+
+            planes.RemoveAt(0);
         }
 
-        planes.RemoveAt(0);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    public void Rotate(Vector2 direction)
-    {
-        // GENERUJ MAPE 
-        foreach(GameObject game in planes)
+        public void Rotate(Vector2 direction)
         {
-            if(game.transform.eulerAngles == Vector3.zero)
+            planes = new List<GameObject>();
+            Transform[] trans = GetComponentsInChildren<Transform>();
+            foreach (Transform transform in trans)
             {
-                last = game;
+                if(transform.CompareTag("Plane"))planes.Add(transform.gameObject);
+            }
+
+
+            foreach (GameObject game in planes)
+            {
+                if (game.transform.eulerAngles == Vector3.zero)
+                {
+                    last = game;
+                }
+            }
+            transform.DORotate(transform.eulerAngles + new Vector3(-direction.y, 0, direction.x) * 90, 1f, RotateMode.Fast).OnComplete(ResetRotation);
+        }
+
+        private void ResetRotation()
+        {
+            foreach (GameObject game in planes)
+            {
+                if (game.transform.eulerAngles == Vector3.zero)
+                {
+                    game.transform.position = last.transform.position;
+                    game.transform.rotation = last.transform.rotation;
+
+                    transform.rotation = Quaternion.identity;
+
+                    mapGenerator.ChangeMainBorder(game);
+                    unityEvent.Invoke();
+
+                    break;
+                }
             }
         }
-
-        transform.DORotate(transform.eulerAngles + new Vector3(-direction.y, 0, direction.x) * 90, 1f, RotateMode.Fast).OnComplete(ResetRotation);
-    }
-
-    private void ResetRotation()
-    {
-        GameObject neww =null;
-
-        foreach (GameObject game in planes)
-        {
-            if (game.transform.eulerAngles == Vector3.zero)
-            {
-                neww = game;
-            }
-        }
-
-        // DO wyrzucenia
-        Quaternion qq = last.transform.rotation;
-        Vector3 vec3 = last.transform.position;
-        last.transform.position = neww.transform.position;
-        last.transform.rotation = neww.transform.rotation;
-
-        neww.transform.position = vec3;
-        neww.transform.rotation = qq;
-        transform.rotation = Quaternion.identity;
-        unityEvent.Invoke();
     }
 }

@@ -11,7 +11,7 @@ namespace Player
         {
             if (CurrentDirection == Vector3.zero)
             {
-                CurrentDirection = transform.forward;
+                CurrentDirection = transform.right;
             }
         }
 

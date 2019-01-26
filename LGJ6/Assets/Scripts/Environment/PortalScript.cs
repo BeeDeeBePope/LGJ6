@@ -32,7 +32,7 @@ namespace Environment
                 pl.HidePlayer();
 
                 CubeRotator.Instance.Rotate(DirectionToVector());
-                other.transform.DOLocalMove(Destination.transform.localPosition,1f);
+                //other.transform.DOMove(Destination.transform.localPosition,1f);
                 CubeRotator.Instance.unityEvent.AddListener(() =>
                 {
                     Destination.Spawn(other.gameObject);
@@ -66,6 +66,8 @@ namespace Environment
             pos.x = transform.position.x;
             pos.z = transform.position.z;
             player.transform.position = pos;
+
+            Destroy(gameObject);
         }
     }
 
