@@ -27,9 +27,15 @@ namespace Environment
             }
             if (other.CompareTag("Player"))
             {
-                Despawn(other.gameObject);
+                PlayerControler pl = other.GetComponent<PlayerControler>();
+                pl.HidePlayer();
+
                 CubeRotator.Instance.Rotate(DirectionToVector());
-                CubeRotator.Instance.unityEvent.AddListener(() => Destination.Spawn(other.gameObject));
+                CubeRotator.Instance.unityEvent.AddListener(() =>
+                {
+                    Destination.Spawn(other.gameObject);
+                    pl.ShowPlayer();
+                });
             }
         }
 
@@ -49,12 +55,7 @@ namespace Environment
                     throw new ArgumentOutOfRangeException();
             }
         }
-
-        private void Despawn(GameObject player)
-        {
-            player.SetActive(false);
-        }
-
+        
         public void Spawn(GameObject player)
         {
             arrived = true;
@@ -63,7 +64,6 @@ namespace Environment
             pos.x = transform.position.x;
             pos.z = transform.position.z;
             player.transform.position = pos;
-            player.SetActive(true);
         }
     }
 
