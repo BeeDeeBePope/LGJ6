@@ -1,8 +1,9 @@
 ﻿using System;
-using UnityEngine;
 using DG.Tweening;
+using Player;
+using UnityEngine;
 
-namespace Environment
+namespace Environment.MapElements
 {
     public class PortalScript : MonoBehaviour
     {
