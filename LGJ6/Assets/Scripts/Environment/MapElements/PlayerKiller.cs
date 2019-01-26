@@ -10,7 +10,7 @@ namespace Environment.MapElements
             if (other.CompareTag("Player"))
             {
                 PlayerControler pl = other.GetComponent<PlayerControler>();
-                pl.Die();
+                pl.Die(); 
             }
         }
     }

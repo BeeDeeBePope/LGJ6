@@ -8,6 +8,8 @@ namespace Player
         public Collider PlayerCollider;
         public GameObject PlayerVisuals;
 
+        public int CoinCount;
+
         private void Awake()
         {
             Movement = GetComponent<PlayerMovement>();
@@ -31,6 +33,11 @@ namespace Player
         public void Die()
         {
             HidePlayer();
+        }
+
+        public void AddCoin()
+        {
+            CoinCount++;
         }
     }
 }
