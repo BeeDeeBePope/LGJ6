@@ -39,14 +39,20 @@ namespace Environment
             // Spawn First Portal
             PortalScript portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
             portal.Direction = Direction.Up;
-            portal.transform.localPosition = new Vector3();
+            portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, 4.75f);
+
+            portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
+            portal.Direction = Direction.Down;
+            portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, -4.75f);
+
+            portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
+            portal.Direction = Direction.Right;
+            portal.transform.localPosition = new Vector3(4.75f, 0, Random.Range(-4.5f, 4.5f));
+
+
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+        //void G
     }
 }
 
