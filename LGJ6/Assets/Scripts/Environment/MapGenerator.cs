@@ -37,6 +37,7 @@ namespace Environment
             frontMap.GetComponent<MeshRenderer>().material = mapColor[i];
             UseMaterial.Add(mapColor[i]);
             mapColor.RemoveAt(i);
+            TailMapGeneration(frontMap);
             // Spawn First Portal
             PortalScript portal = Instantiate(Portal, frontMap.transform).GetComponent<PortalScript>();
             portal.Direction = Direction.Up;
@@ -90,6 +91,7 @@ namespace Environment
             //Set Material
             int i = Random.Range(0, mapColor.Count - UseMaterial.Count);
             border.GetComponent<MeshRenderer>().material = mapColor[i];
+            TailMapGeneration(border);
             // Spawn First Portal
             PortalScript portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
             portal.Direction = Direction.Up;
@@ -120,10 +122,10 @@ namespace Environment
             frontMap = nextMainBorder;
             nextMainBorder.transform.SetParent(frontLocationMap);
 
-            int i=0;
-            for (int j =0; j< mapColor.Count;j++)
+            int i = 0;
+            for (int j = 0; j < mapColor.Count; j++)
             {
-                if(mapColor[j].color == nextMainBorder.GetComponent<MeshRenderer>().materials[0].color)
+                if (mapColor[j].color == nextMainBorder.GetComponent<MeshRenderer>().materials[0].color)
                 {
                     i = j;
                     break;
@@ -132,7 +134,11 @@ namespace Environment
 
             UseMaterial.Add(mapColor[i]);
             mapColor.RemoveAt(i);
-            if (UseMaterial.Count == 3) UseMaterial.RemoveAt(0);
+            if (UseMaterial.Count == 3)
+            {
+                mapColor.Add(UseMaterial[0]);
+                UseMaterial.RemoveAt(0);
+            }
 
             if (leftMap == nextMainBorder) leftMap = null;
             else if (rightMap == nextMainBorder) rightMap = null;
@@ -161,6 +167,25 @@ namespace Environment
 
             Destroy(downMap);
             downMap = null;
+        }
+
+        void TailMapGeneration(GameObject border)
+        {
+            if (MapBuilder.Instance == null) return;
+            int i = MapBuilder.Instance.SearchByColor(border.GetComponent<MeshRenderer>().materials[0].color);
+            if (i == -1) i=0;
+
+            Debug.Log("A");
+
+            for (int j = 0; j < 24; j++)
+            {
+                for (int k = 0; k < 24; k++)
+                {
+                    GameObject tile = Instantiate(MapBuilder.Instance.bioms[i].sprites[MapBuilder.Instance.blockColors[0, j, k]], border.transform);
+                    //tile.transform.scal = new Vector3(.5f, .5f, .5f);
+                    tile.transform.localPosition = new Vector3(-11.5f + k, 0, 11.5f + -j);
+                }
+            }
         }
 
     }

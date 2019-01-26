@@ -68,7 +68,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300026, guid: 317fac4fd31e12e4b933ec7e2b0d14e7, type: 3}
+  m_Sprite: {fileID: 21300050, guid: 317fac4fd31e12e4b933ec7e2b0d14e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,10 +88,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 651019507499096403}
-  - component: {fileID: 476277717865809065}
-  - component: {fileID: 580506156778349752}
   m_Layer: 0
-  m_Name: DeathElement
+  m_Name: Normal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,32 +110,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &476277717865809065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7262160129470152600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c467972558d479d4d9d17f5f3f5c8282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisableOverride: 0
---- !u!65 &580506156778349752
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7262160129470152600}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8258488478511027522
 GameObject:
   m_ObjectHideFlags: 0
