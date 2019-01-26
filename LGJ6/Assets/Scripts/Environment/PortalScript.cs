@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using DG.Tweening;
 
 namespace Environment
 {
@@ -11,13 +12,13 @@ namespace Environment
 
         private bool arrived;
 
-        private void Awake()
-        {
-            if (Destination != null)
-            {
-                Destination.Destination = this;
-            }
-        }
+        //private void Awake()
+        //{
+        //    if (Destination != null)
+        //    {
+        //        Destination.Destination = this;
+        //    }
+        //}
 
         private void OnTriggerEnter(Collider other)
         {
@@ -31,6 +32,7 @@ namespace Environment
                 pl.HidePlayer();
 
                 CubeRotator.Instance.Rotate(DirectionToVector());
+                other.transform.DOLocalMove(Destination.transform.localPosition,1f);
                 CubeRotator.Instance.unityEvent.AddListener(() =>
                 {
                     Destination.Spawn(other.gameObject);
