@@ -1,16 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:LGJ6/Assets/Images/Desert/sandtexture.png.meta
 guid: 315d22bf476bbb74f82aa8c6cf7ee823
-=======
-guid: b890c68441f3b934a89764ece37202d6
->>>>>>> da34c15fb3b4282d533fb8eefd2f8fa7e2b54210:LGJ6/Assets/Images/Water/watertexture.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -38,28 +34,24 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD:LGJ6/Assets/Images/Desert/sandtexture.png.meta
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 64
->>>>>>> da34c15fb3b4282d533fb8eefd2f8fa7e2b54210:LGJ6/Assets/Images/Water/watertexture.png.meta
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -77,17 +69,35 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
     physicsShape: []
     bones: []
-<<<<<<< HEAD:LGJ6/Assets/Images/Desert/sandtexture.png.meta
-    spriteID: 
-=======
-    spriteID: ac2aef33201b7ab40bcea010dc2b44c7
->>>>>>> da34c15fb3b4282d533fb8eefd2f8fa7e2b54210:LGJ6/Assets/Images/Water/watertexture.png.meta
+    spriteID: bb928cb2a5e139d4083fa366c7e52cc1
     vertices: []
     indices: 
     edges: []

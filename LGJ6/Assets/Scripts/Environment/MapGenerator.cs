@@ -103,32 +103,13 @@ namespace Environment
                 }
             }
             lastPortal.Destination = nextportal;
-            //// Spawn First Portal
-            //PortalScript portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
-            //portal.Direction = Direction.Up;
-            //portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, 4.75f);
-            //if (direction == Direction.Down) lastPortal.Destination = portal;
-
-            //portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
-            //portal.Direction = Direction.Down;
-            //portal.transform.localPosition = new Vector3(Random.Range(-4.5f, 4.5f), 0, -4.75f);
-            //if (direction == Direction.Up) lastPortal.Destination = portal;
-
-            //portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
-            //portal.Direction = Direction.Right;
-            //portal.transform.localPosition = new Vector3(4.75f, 0, Random.Range(-4.5f, 4.5f));
-            //if (direction == Direction.Left) lastPortal.Destination = portal;
-
-            //portal = Instantiate(Portal, border.transform).GetComponent<PortalScript>();
-            //portal.Direction = Direction.Left;
-            //portal.transform.localPosition = new Vector3(-4.75f, 0, Random.Range(-4.5f, 4.5f));
-            //if (direction == Direction.Right) lastPortal.Destination = portal;
         }
 
         public void ChangeMainBorder(GameObject nextMainBorder)
         {
             GameObject temp = frontMap;
             temp.transform.SetParent(null);
+            temp.transform.position = new Vector3(100, 100, 1000);
             StartCoroutine(WaitForDestroy(temp));
             frontMap = nextMainBorder;
             nextMainBorder.transform.SetParent(frontLocationMap);

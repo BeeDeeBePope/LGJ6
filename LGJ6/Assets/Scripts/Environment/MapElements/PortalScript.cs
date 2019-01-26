@@ -11,26 +11,22 @@ namespace Environment.MapElements
 
         public Direction Direction;
 
-        private bool arrived;
+        public bool arrived;
 
-        Transform trans;
-        //private void Awake()
-        //{
-        //    if (Destination != null)
-        //    {
-        //        Destination.Destination = this;
-        //    }
-        //}
+        public GameObject PreVisuals;
+        public GameObject PostVisuals;
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("a");
+            Debug.Log(transform.position);
+
             if (arrived)
             {
                 return;
             }
             if (other.CompareTag("Player"))
             {
+                Debug.Log("b");
                 arrived = true;
                 PlayerControler pl = other.GetComponent<PlayerControler>();
                 pl.HidePlayer();
@@ -66,6 +62,7 @@ namespace Environment.MapElements
         public void SetArrived()
         {
             arrived = true;
+            Debug.Log("b");
         }
 
         public void Spawn(GameObject player)
@@ -76,11 +73,14 @@ namespace Environment.MapElements
             pos.z = transform.position.z;
             player.transform.position = pos;
 
-            Destroy(gameObject);
+            PreVisuals.SetActive(false);
+            PostVisuals.SetActive(true);
+            Destroy(this);
         }
 
         private void OnDestroy()
         {
+            if(CubeRotator.Instance !=null)
             CubeRotator.Instance.unityEvent.RemoveAllListeners();
         }
     }
