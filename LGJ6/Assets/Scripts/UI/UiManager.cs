@@ -22,6 +22,8 @@ namespace UI
         public void StartGame()
         {
             GameManager.Instance.StartGame();
+            MainMenu.SetActive(false);
+            EndGameMenu.SetActive(false);
         }
 
         public void QuitGame()
