@@ -28,7 +28,7 @@ namespace UI
         public void RestartGame()
         {
             EndGameMenu.SetActive(false);
-            GameManager.Instance.StartGame();
+            GameManager.Instance.Restart();
         }
 
         public void QuitGame()

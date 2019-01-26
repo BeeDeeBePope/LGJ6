@@ -24,6 +24,7 @@ namespace Environment.MapElements
 
         private void OnTriggerEnter(Collider other)
         {
+            Debug.Log("a");
             if (arrived)
             {
                 return;
@@ -34,6 +35,7 @@ namespace Environment.MapElements
                 PlayerControler pl = other.GetComponent<PlayerControler>();
                 pl.HidePlayer();
 
+                Destination.SetArrived();
                 CubeRotator.Instance.Rotate(DirectionToVector());
                 //other.transform.DOMove(Destination.transform.localPosition,1f);
                 CubeRotator.Instance.unityEvent.AddListener(() =>
@@ -61,16 +63,20 @@ namespace Environment.MapElements
             }
         }
         
-        public void Spawn(GameObject player)
+        public void SetArrived()
         {
             arrived = true;
+        }
+
+        public void Spawn(GameObject player)
+        {
             player.transform.rotation = transform.rotation;
             Vector3 pos = player.transform.position;
             pos.x = transform.position.x;
             pos.z = transform.position.z;
             player.transform.position = pos;
 
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
 
         private void OnDestroy()

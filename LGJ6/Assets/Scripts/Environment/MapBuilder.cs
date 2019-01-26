@@ -43,7 +43,6 @@ public class MapBuilder : MonoBehaviour
 
     public int SearchByColor(Color color)
     {
-        Debug.Log("2");
         for(int i=0;i<bioms.Length; i++)
         {
             if(color == bioms[i].identitycolor)

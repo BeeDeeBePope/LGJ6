@@ -33,6 +33,7 @@ namespace Player
 
         public void Die()
         {
+            Debug.Log("die");
             HidePlayer();
             GameManager.Instance.EndGame();
         }
