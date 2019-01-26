@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: 6734e76b05b16bc4da2a6192df117fb0
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: ogon_GO/ogon_GO
+    100002: ogon_GO/ogon_GO/glowa
+    100004: ogon_GO/ogon_GO/noga przednia
+    100006: ogon_GO/ogon_GO/noga przednia tyl
+    100008: ogon_GO/ogon_GO/noga tylnia
+    100010: ogon_GO/ogon_GO/noga tylnia tyl
+    100012: ogon_GO/ogon_GO/ogon
+    100014: "ogon_GO/ogon_GO/t\u0142ow"
+    400000: ogon_GO/ogon_GO/Transform
+    400002: ogon_GO/ogon_GO/glowa/Transform
+    400004: ogon_GO/ogon_GO/noga przednia/Transform
+    400006: ogon_GO/ogon_GO/noga przednia tyl/Transform
+    400008: ogon_GO/ogon_GO/noga tylnia/Transform
+    400010: ogon_GO/ogon_GO/noga tylnia tyl/Transform
+    400012: ogon_GO/ogon_GO/ogon/Transform
+    400014: "ogon_GO/ogon_GO/t\u0142ow/Transform"
+    2800000: wilk
+    21200000: ogon_GO/ogon_GO/glowa/SpriteRenderer
+    21200002: ogon_GO/ogon_GO/noga przednia/SpriteRenderer
+    21200004: ogon_GO/ogon_GO/noga przednia tyl/SpriteRenderer
+    21200006: ogon_GO/ogon_GO/noga tylnia/SpriteRenderer
+    21200008: ogon_GO/ogon_GO/noga tylnia tyl/SpriteRenderer
+    21200010: ogon_GO/ogon_GO/ogon/SpriteRenderer
+    21200012: "ogon_GO/ogon_GO/t\u0142ow/SpriteRenderer"
+    21300000: noga tylnia
+    21300002: noga przednia
+    21300004: glowa
+    21300006: "t\u0142ow"
+    21300008: noga przednia tyl
+    21300010: noga tylnia tyl
+    21300012: ogon
+    100100000: ogon_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: noga tylnia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 466
+      width: 287
+      height: 465
+    spriteID: d075ac6d34f8ac14bb7218b191482e22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1076, y: 351}
+  - name: noga przednia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 299
+      y: 466
+      width: 164
+      height: 462
+    spriteID: ff8a828bfa756d347bba2220879c3215
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -359, y: 335}
+  - name: glowa
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 471
+      y: 466
+      width: 287
+      height: 241
+    spriteID: a8ab4c0f42b5073439ac562813423a4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -82, y: -256}
+  - name: "t\u0142ow"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 613
+      height: 454
+    spriteID: f3f3d3026a5198348a270d0f04c44615
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -639, y: -378}
+  - name: noga przednia tyl
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 471
+      y: 715
+      width: 151
+      height: 285
+    spriteID: 7a2cd96931e23a347bf75233ca654195
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -339, y: 573}
+  - name: noga tylnia tyl
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 625
+      y: 4
+      width: 218
+      height: 381
+    spriteID: 2e84fdb1e68965f42a11074cf1d204f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -380, y: -128}
+  - name: ogon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 851
+      y: 4
+      width: 165
+      height: 390
+    spriteID: a197f6b648254d34296da16778fb5815
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -352, y: -504}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 1024
+  documentSize: {x: 1920, y: 1080}
+  textureActualWidth: 1024
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: noga tylnia
+    spriteName: noga tylnia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d075ac6d34f8ac14bb7218b191482e22
+    layerID: 57
+    mosaicPosition: {x: 4, y: 466}
+  - name: noga przednia
+    spriteName: noga przednia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ff8a828bfa756d347bba2220879c3215
+    layerID: 58
+    mosaicPosition: {x: 299, y: 466}
+  - name: glowa
+    spriteName: glowa
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a8ab4c0f42b5073439ac562813423a4e
+    layerID: 59
+    mosaicPosition: {x: 471, y: 466}
+  - name: "t\u0142ow"
+    spriteName: "t\u0142ow"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f3f3d3026a5198348a270d0f04c44615
+    layerID: 41
+    mosaicPosition: {x: 4, y: 4}
+  - name: noga przednia tyl
+    spriteName: noga przednia tyl
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7a2cd96931e23a347bf75233ca654195
+    layerID: 49
+    mosaicPosition: {x: 471, y: 715}
+  - name: noga tylnia tyl
+    spriteName: noga tylnia tyl
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2e84fdb1e68965f42a11074cf1d204f2
+    layerID: 47
+    mosaicPosition: {x: 625, y: 4}
+  - name: ogon
+    spriteName: ogon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a197f6b648254d34296da16778fb5815
+    layerID: 45
+    mosaicPosition: {x: 851, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0
