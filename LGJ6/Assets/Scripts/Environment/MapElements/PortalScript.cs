@@ -13,6 +13,7 @@ namespace Environment.MapElements
 
         private bool arrived;
 
+        Transform trans;
         //private void Awake()
         //{
         //    if (Destination != null)
@@ -37,7 +38,6 @@ namespace Environment.MapElements
                 //other.transform.DOMove(Destination.transform.localPosition,1f);
                 CubeRotator.Instance.unityEvent.AddListener(() =>
                 {
-                    Debug.Log(transform.localPosition);
                     Destination.Spawn(other.gameObject);
                     pl.ShowPlayer();
                 });
@@ -64,7 +64,6 @@ namespace Environment.MapElements
         public void Spawn(GameObject player)
         {
             arrived = true;
-            if (player != null && transform !=null)
             player.transform.rotation = transform.rotation;
             Vector3 pos = player.transform.position;
             pos.x = transform.position.x;
@@ -72,6 +71,11 @@ namespace Environment.MapElements
             player.transform.position = pos;
 
             //Destroy(gameObject);
+        }
+
+        private void OnDestroy()
+        {
+            CubeRotator.Instance.unityEvent.RemoveAllListeners();
         }
     }
 
