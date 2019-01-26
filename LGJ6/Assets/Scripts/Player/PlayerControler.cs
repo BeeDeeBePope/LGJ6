@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace Player
 {
@@ -25,6 +26,12 @@ namespace Player
 
         public void ShowPlayer()
         {
+            StartCoroutine(WaitForShowPlayer());
+        }
+
+        IEnumerator WaitForShowPlayer()
+        {
+            yield return new WaitForSeconds(.2f);
             PlayerVisuals.SetActive(true);
             Movement.enabled = true;
             PlayerCollider.enabled = true;

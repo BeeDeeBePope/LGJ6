@@ -1,6 +1,6 @@
-﻿using System.Collections;
+﻿using Environment.MapElements;
+using System.Collections;
 using System.Collections.Generic;
-using Environment.MapElements;
 using UnityEngine;
 
 namespace Environment
@@ -114,12 +114,11 @@ namespace Environment
 
         public void ChangeMainBorder(GameObject nextMainBorder)
         {
-            Debug.Log(nextMainBorder);
             GameObject temp = frontMap;
+            temp.transform.SetParent(null);
             StartCoroutine(WaitForDestroy(temp));
             frontMap = nextMainBorder;
             nextMainBorder.transform.SetParent(frontLocationMap);
-            frontMap.transform.SetParent(frontLocationMap);
 
             if (leftMap == nextMainBorder) leftMap = null;
             else if (rightMap == nextMainBorder) rightMap = null;
@@ -128,11 +127,11 @@ namespace Environment
             ClearBorder();
             BorderGenereting();
         }
-        
-        IEnumerator WaitForDestroy(GameObject gameObject)
+
+        IEnumerator WaitForDestroy(GameObject game)
         {
-            yield return new WaitForSeconds(.5f);
-            Destroy(gameObject);
+            yield return new WaitForSeconds(2f);
+            Destroy(game);
         }
 
         void ClearBorder()
