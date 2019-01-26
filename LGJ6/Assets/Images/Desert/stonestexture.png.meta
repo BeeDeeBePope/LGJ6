@@ -1,20 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: d7c1ad2acf156d44292777ccdca70800
-=======
-guid: 4b33ef6353cae7147ae30e2307c4f54e
->>>>>>> da34c15fb3b4282d533fb8eefd2f8fa7e2b54210
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-<<<<<<< HEAD
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> da34c15fb3b4282d533fb8eefd2f8fa7e2b54210
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -42,15 +34,6 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-<<<<<<< HEAD
-    wrapU: -1
-    wrapV: -1
-    wrapW: -1
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
-=======
     wrapU: 1
     wrapV: 1
     wrapW: -1
@@ -58,20 +41,10 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
->>>>>>> da34c15fb3b4282d533fb8eefd2f8fa7e2b54210
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 1
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
-=======
   spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -79,7 +52,6 @@ TextureImporter:
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
->>>>>>> da34c15fb3b4282d533fb8eefd2f8fa7e2b54210
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -97,8 +69,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-<<<<<<< HEAD
-=======
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -121,18 +91,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
->>>>>>> da34c15fb3b4282d533fb8eefd2f8fa7e2b54210
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
     physicsShape: []
     bones: []
-<<<<<<< HEAD
-    spriteID: 
-=======
-    spriteID: 35b28c4d0fb4235408786a5cb095d21c
->>>>>>> da34c15fb3b4282d533fb8eefd2f8fa7e2b54210
+    spriteID: 41762e33ea76e42488079c3b3b6d69e5
     vertices: []
     indices: 
     edges: []
