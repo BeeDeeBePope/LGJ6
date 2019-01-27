@@ -25,9 +25,15 @@ namespace Player
             PlayerCollider.enabled = false;
         }
 
-        public void ShowPlayer()
+        public void ShowPlayer(float wait = 0)
         {
             PlayerVisuals.SetActive(true);
+            StartCoroutine(WaitForStart(wait));
+        }
+
+        IEnumerator WaitForStart(float wait)
+        {
+            yield return new WaitForSeconds(wait);
             Movement.enabled = true;
             PlayerCollider.enabled = true;
         }
