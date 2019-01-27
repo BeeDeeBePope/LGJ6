@@ -12,8 +12,8 @@ public class GameManager : MonoBehaviour
     public float pointsForNewBoard = 25;
     public float allPoints;
 
-    public AudioSource musicsource;
-    public AudioSource soundsource;
+    public AudioSource musicSource;
+    public AudioSource soundSource;
     public AudioClip startSound;
     public AudioClip deathSound;
     public AudioClip menuSound;
@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public PlayerControler Player;
 
     private Coroutine coroutine;
+    private Coroutine musiccoroutine;
 
     private void Awake()
     {
@@ -40,14 +41,24 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Player.HidePlayer();
+        musicSource.clip = menuSound;
+        musicSource.Play();
+        musicSource.loop = true;
     }
 
     public void StartGame()
     {
         allPoints = 0;
         StartCountingPoints();
+        StartMusic(startSound.length);
         Player.Movement.ResetSpeed();
-        Player.ShowPlayer();
+
+        musicSource.Stop();
+        musicSource.loop = false;
+        soundSource.clip = startSound;
+        soundSource.Play();
+
+        Player.ShowPlayer(startSound.length);
     }
 
     public void PauseGame()
@@ -57,24 +68,23 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         StopCountingPoints();
+        StopMusic();
         Player.Movement.enabled = false;
         UiManager.SetScore(Mathf.CeilToInt(allPoints));
         UiManager.ShowEndGame();
-    }
 
-    public void StartCountingPoints()
-    {
-        ResetAvilablePoints();
-        if (coroutine == null)
-        {
-            coroutine = StartCoroutine(CountPoints());
-        }
+        musicSource.Stop();
+        soundSource.clip = deathSound;
+        soundSource.Play();
     }
 
     public void RestartBoard()
     {
         Destroy(spawnedBoard);
         spawnedBoard = Instantiate(board);
+        musicSource.clip = menuSound;
+        musicSource.Play();
+        musicSource.loop = true;
     }
 
     public void Restart()
@@ -82,8 +92,9 @@ public class GameManager : MonoBehaviour
         allPoints = 0;
         Destroy(spawnedBoard);
         StartCountingPoints();
+        StartMusic(startSound.length);
         Player.Movement.ResetSpeed();
-        Player.ShowPlayer();
+        Player.ShowPlayer(startSound.length);
         spawnedBoard = Instantiate(board);
     }
 
@@ -103,6 +114,18 @@ public class GameManager : MonoBehaviour
         }        
     }
 
+    private IEnumerator PlayMusic(float time)
+    {
+        yield return new WaitForSeconds(time);
+        while(true)
+        {           
+            int i = Random.Range(0,musicSound.Length);
+            musicSource.clip = musicSound[i];
+            musicSource.Play();
+            yield return new WaitForSeconds(musicSound[i].length);
+        }
+    }
+
     public void AddPointsForGold()
     {
         allPoints += pointsForGold;
@@ -115,9 +138,33 @@ public class GameManager : MonoBehaviour
         UiManager.SetCurrentPoints(Mathf.CeilToInt(allPoints));
     }
 
+    public void StartCountingPoints()
+    {
+        ResetAvilablePoints();
+        if (coroutine == null)
+        {
+            coroutine = StartCoroutine(CountPoints());
+        }
+    }
+
     public void StopCountingPoints()
     {
         StopCoroutine(coroutine);
         coroutine = null;
+    }
+
+    public void StartMusic(float time)
+    {
+        if (musiccoroutine == null)
+        {
+            musiccoroutine = StartCoroutine(PlayMusic(time));
+        }
+    }
+
+    public void StopMusic()
+    {
+        musicSource.Stop();
+        StopCoroutine(musiccoroutine);
+        musiccoroutine = null;
     }
 }
