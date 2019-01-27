@@ -68,8 +68,8 @@ namespace Environment.MapElements
         {
             player.transform.rotation = transform.rotation;
             Debug.Log(player.GetComponent<PlayerMovement>().CurrentDirection);
-            Debug.Log(player.transform.position);
-            player.transform.position = player.transform.position + player.GetComponent<PlayerMovement>().CurrentDirection;
+            Debug.Log(transform.position);
+            player.transform.position = transform.position + player.GetComponent<PlayerMovement>().CurrentDirection;
             Debug.Log(player.transform.position);
 
             player.GetComponent<PlayerMovement>().SpeedUp();
