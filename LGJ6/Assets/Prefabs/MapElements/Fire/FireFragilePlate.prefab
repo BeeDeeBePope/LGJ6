@@ -77,6 +77,12 @@ PrefabInstance:
       propertyPath: PostVisuals
       value: 
       objectReference: {fileID: 79062547123660274}
+    - target: {fileID: 4135961584773278384, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 938c28cca4d2dff4d8298fe2dbd9e078,
+        type: 3}
     - target: {fileID: 3107878104940391269, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
         type: 3}
       propertyPath: m_Sprite
