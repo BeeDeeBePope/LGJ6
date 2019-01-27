@@ -15,6 +15,7 @@ namespace UI
         {
             MainMenu.SetActive(true);
             EndGameMenu.SetActive(false);
+            GameManager.Instance.RestartBoard();
         }
 
         public void ShowEndGame()

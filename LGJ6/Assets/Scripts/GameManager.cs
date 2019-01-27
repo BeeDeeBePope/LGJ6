@@ -64,6 +64,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void RestartBoard()
+    {
+        Destroy(spawnedBoard);
+        spawnedBoard = Instantiate(board);
+    }
+
     public void Restart()
     {
         allPoints = 0;
