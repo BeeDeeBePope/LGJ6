@@ -53,7 +53,7 @@ namespace Player
         public void TurnLeft()
         {
             var scale = PlayerVisuals.transform.localScale;
-            scale.x *= Mathf.Abs(scale.x);
+            scale.x = Mathf.Abs(scale.x);
             PlayerVisuals.transform.localScale = scale;
         }
     }
