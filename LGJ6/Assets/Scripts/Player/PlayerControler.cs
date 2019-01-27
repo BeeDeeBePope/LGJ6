@@ -9,17 +9,17 @@ namespace Player
         public Collider PlayerCollider;
         public GameObject PlayerVisuals;
 
-        public int CoinCount;
+        //public int CoinCount;
 
         private void Awake()
         {
             Movement = GetComponent<PlayerMovement>();
+            Movement.Player = this;
             PlayerCollider = GetComponent<Collider>();
         }
 
         public void HidePlayer()
         {
-            Debug.Log("hide");
             PlayerVisuals.SetActive(false);
             Movement.enabled = false;
             PlayerCollider.enabled = false;
@@ -27,7 +27,6 @@ namespace Player
 
         public void ShowPlayer()
         {
-            Debug.Log("show");
             PlayerVisuals.SetActive(true);
             Movement.enabled = true;
             PlayerCollider.enabled = true;
@@ -35,14 +34,27 @@ namespace Player
 
         public void Die()
         {
-            Debug.Log("die");
             HidePlayer();
             GameManager.Instance.EndGame();
         }
 
         public void AddCoin()
         {
-            CoinCount++;
+            GameManager.Instance.AddPointsForGold();
+        }
+
+        public void TurnRight()
+        {
+            var scale = PlayerVisuals.transform.localScale;
+            scale.x = Mathf.Abs(scale.x) * -1;
+            PlayerVisuals.transform.localScale = scale;
+        }
+
+        public void TurnLeft()
+        {
+            var scale = PlayerVisuals.transform.localScale;
+            scale.x = Mathf.Abs(scale.x);
+            PlayerVisuals.transform.localScale = scale;
         }
     }
 }

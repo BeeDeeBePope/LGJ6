@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 876fcb25beac62947bebce8abae92a09
+=======
+guid: 6734e76b05b16bc4da2a6192df117fb0
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
 ScriptedImporter:
   fileIDToRecycleName:
     100000: ogon_GO/ogon_GO
@@ -127,7 +131,11 @@ ScriptedImporter:
       y: 466
       width: 287
       height: 465
+<<<<<<< HEAD
     spriteID: 0886876e68021f84582451900fd59dea
+=======
+    spriteID: d075ac6d34f8ac14bb7218b191482e22
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -148,7 +156,11 @@ ScriptedImporter:
       y: 466
       width: 164
       height: 462
+<<<<<<< HEAD
     spriteID: ea1606bda40f18e46902749783e848b0
+=======
+    spriteID: ff8a828bfa756d347bba2220879c3215
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -169,7 +181,11 @@ ScriptedImporter:
       y: 466
       width: 287
       height: 241
+<<<<<<< HEAD
     spriteID: 840f2b0c311270d4593a1a8092ceb199
+=======
+    spriteID: a8ab4c0f42b5073439ac562813423a4e
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +206,11 @@ ScriptedImporter:
       y: 4
       width: 613
       height: 454
+<<<<<<< HEAD
     spriteID: cc9f1ce2924771f4089ffeef33561dd5
+=======
+    spriteID: f3f3d3026a5198348a270d0f04c44615
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -211,7 +231,11 @@ ScriptedImporter:
       y: 715
       width: 151
       height: 285
+<<<<<<< HEAD
     spriteID: 37e399ba218151d4ba1110c51aa5f9a8
+=======
+    spriteID: 7a2cd96931e23a347bf75233ca654195
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +256,11 @@ ScriptedImporter:
       y: 4
       width: 218
       height: 381
+<<<<<<< HEAD
     spriteID: 81fb4f5b8aa36cc43a338ae00d15957c
+=======
+    spriteID: 2e84fdb1e68965f42a11074cf1d204f2
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -253,7 +281,11 @@ ScriptedImporter:
       y: 4
       width: 165
       height: 390
+<<<<<<< HEAD
     spriteID: 8b350f172f526da4599a524d90d53f22
+=======
+    spriteID: a197f6b648254d34296da16778fb5815
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -282,49 +314,77 @@ ScriptedImporter:
     spriteName: noga tylnia
     isGroup: 0
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: 0886876e68021f84582451900fd59dea
+=======
+    spriteID: d075ac6d34f8ac14bb7218b191482e22
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     layerID: 57
     mosaicPosition: {x: 4, y: 466}
   - name: noga przednia
     spriteName: noga przednia
     isGroup: 0
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: ea1606bda40f18e46902749783e848b0
+=======
+    spriteID: ff8a828bfa756d347bba2220879c3215
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     layerID: 58
     mosaicPosition: {x: 299, y: 466}
   - name: glowa
     spriteName: glowa
     isGroup: 0
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: 840f2b0c311270d4593a1a8092ceb199
+=======
+    spriteID: a8ab4c0f42b5073439ac562813423a4e
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     layerID: 59
     mosaicPosition: {x: 471, y: 466}
   - name: "t\u0142ow"
     spriteName: "t\u0142ow"
     isGroup: 0
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: cc9f1ce2924771f4089ffeef33561dd5
+=======
+    spriteID: f3f3d3026a5198348a270d0f04c44615
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     layerID: 41
     mosaicPosition: {x: 4, y: 4}
   - name: noga przednia tyl
     spriteName: noga przednia tyl
     isGroup: 0
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: 37e399ba218151d4ba1110c51aa5f9a8
+=======
+    spriteID: 7a2cd96931e23a347bf75233ca654195
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     layerID: 49
     mosaicPosition: {x: 471, y: 715}
   - name: noga tylnia tyl
     spriteName: noga tylnia tyl
     isGroup: 0
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: 81fb4f5b8aa36cc43a338ae00d15957c
+=======
+    spriteID: 2e84fdb1e68965f42a11074cf1d204f2
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     layerID: 47
     mosaicPosition: {x: 625, y: 4}
   - name: ogon
     spriteName: ogon
     isGroup: 0
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: 8b350f172f526da4599a524d90d53f22
+=======
+    spriteID: a197f6b648254d34296da16778fb5815
+>>>>>>> bb175dcf46cfa1537f8eb39caa598df983220557
     layerID: 45
     mosaicPosition: {x: 851, y: 4}
   characterData:

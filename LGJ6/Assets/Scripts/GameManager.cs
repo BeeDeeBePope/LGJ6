@@ -7,6 +7,19 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameObject board;
+    public float pointsForRoom=100;
+    public float pointsForGold = 25;
+    public float pointsForNewBoard = 25;
+    public float allPoints;
+
+    public AudioSource musicsource;
+    public AudioSource soundsource;
+    public AudioClip startSound;
+    public AudioClip deathSound;
+    public AudioClip menuSound;
+    public AudioClip[] musicSound;
+
+    private float remainingPoints;
     private GameObject spawnedBoard;
 
 
@@ -17,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        
         Instance = this;
         UiManager = FindObjectOfType<UiManager>();
         Player = FindObjectOfType<PlayerControler>();
@@ -30,8 +44,10 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        allPoints = 0;
+        StartCountingPoints();
+        Player.Movement.ResetSpeed();
         Player.ShowPlayer();
-        Player.transform.position = new Vector3(.5f,12,0.5f);
     }
 
     public void PauseGame()
@@ -40,29 +56,63 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
+        StopCountingPoints();
         Player.Movement.enabled = false;
+        UiManager.SetScore(Mathf.CeilToInt(allPoints));
         UiManager.ShowEndGame();
     }
 
     public void StartCountingPoints()
     {
+        ResetAvilablePoints();
         if (coroutine == null)
         {
             coroutine = StartCoroutine(CountPoints());
         }
     }
 
-    public void Restart()
+    public void RestartBoard()
     {
         Destroy(spawnedBoard);
-        Player.ShowPlayer();
-        Player.transform.position = new Vector3(.5f, 12, 0.5f);
         spawnedBoard = Instantiate(board);
+    }
+
+    public void Restart()
+    {
+        allPoints = 0;
+        Destroy(spawnedBoard);
+        StartCountingPoints();
+        Player.Movement.ResetSpeed();
+        Player.ShowPlayer();
+        spawnedBoard = Instantiate(board);
+    }
+
+    public void ResetAvilablePoints()
+    {
+        remainingPoints = pointsForRoom;
     }
 
     private IEnumerator CountPoints()
     {
-        yield return null;
+        while(remainingPoints > 0)
+        {
+            yield return new WaitForSeconds(.1f);
+            remainingPoints--;
+            allPoints++;
+            UiManager.SetCurrentPoints(Mathf.CeilToInt(allPoints));
+        }        
+    }
+
+    public void AddPointsForGold()
+    {
+        allPoints += pointsForGold;
+        UiManager.SetCurrentPoints(Mathf.CeilToInt(allPoints));
+    }
+
+    public void AddPointsForNewBoard()
+    {
+        allPoints += pointsForNewBoard;
+        UiManager.SetCurrentPoints(Mathf.CeilToInt(allPoints));
     }
 
     public void StopCountingPoints()

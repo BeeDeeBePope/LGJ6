@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 1911236960883753981}
   - component: {fileID: 1911236960883753983}
   - component: {fileID: 1911236960883753982}
+  - component: {fileID: 2601539263729423861}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Portal
@@ -174,6 +175,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0.25, z: 0}
+--- !u!114 &2601539263729423861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911236960883753980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c467972558d479d4d9d17f5f3f5c8282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisableOverride: 1
 --- !u!1 &1911236961175048944
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +287,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300084, guid: 317fac4fd31e12e4b933ec7e2b0d14e7, type: 3}
+  m_Sprite: {fileID: 21300026, guid: 317fac4fd31e12e4b933ec7e2b0d14e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

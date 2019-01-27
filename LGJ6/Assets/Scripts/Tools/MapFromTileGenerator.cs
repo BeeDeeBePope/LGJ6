@@ -10,18 +10,32 @@ public class MapFromTileGenerator : MonoBehaviour
     void Start()
     {
         string mapa = "";
+
+        // Normalna wersja
+        //mapa += "{";
+        //for (int i = 0; i < 24; i++)
+        //{
+        //    mapa += "{";
+        //    for (int j = 0; j < 24; j++)
+        //    {
+        //        mapa += ReturnValuer(j, -i); mapa += ",";
+        //    }
+        //    mapa += "},";
+        //}
+        //mapa += "},";
+
+        // Wersja lustrzania
         mapa += "{";
-        for (int i = 0; i < 24; i++)
+        for (int i = 23; i > -1; i--)
         {
             mapa += "{";
-            for (int j = 0; j < 24; j++)
+            for (int j = 23; j > -1; j--)
             {
                 mapa += ReturnValuer(j, -i); mapa += ",";
             }
             mapa += "},";
         }
         mapa += "},";
-
         Debug.Log(mapa);
     }
 

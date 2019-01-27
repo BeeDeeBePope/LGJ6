@@ -61,9 +61,12 @@ namespace Environment
                     game.transform.rotation = last.transform.rotation;
 
                     transform.rotation = Quaternion.identity;
-                    Debug.Log("Reset");
                     mapGenerator.ChangeMainBorder(game);
                     unityEvent.Invoke();
+
+                    GameManager.Instance.AddPointsForNewBoard();
+                    GameManager.Instance.StopCountingPoints();
+                    GameManager.Instance.StartCountingPoints();
 
                     break;
                 }
