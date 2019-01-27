@@ -67,6 +67,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 067b4a7fc504f8f458c84d0b3d626431, type: 3}
   UiManager: {fileID: 0}
   Player: {fileID: 0}
+  CameraCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &1459829461
 AudioSource:
   m_ObjectHideFlags: 0

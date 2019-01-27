@@ -64,7 +64,7 @@ MonoBehaviour:
     - {fileID: 5927262639950424775, guid: 5a1f241e951eb9149a0d3d9d63b370dd, type: 3}
     - {fileID: 402225354594479124, guid: bd163d3ee00596f4d89e43863171ddf9, type: 3}
     - {fileID: 2749232270282862925, guid: 9e249e81bbfc8cf4a977ae5c1d3e610b, type: 3}
-    - {fileID: 6971617999159898323, guid: 3115ca6ef23a7a7408f8f7c6d4b4164f, type: 3}
+    - {fileID: 79062547123660187, guid: 3115ca6ef23a7a7408f8f7c6d4b4164f, type: 3}
   - identitycolor: {r: 0, g: 1, b: 0, a: 0}
     sprites:
     - {fileID: 8731838253632565509, guid: 02515e345b4a32b4498efbd1b6984cd4, type: 3}
