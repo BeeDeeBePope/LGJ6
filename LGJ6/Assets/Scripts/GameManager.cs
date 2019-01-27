@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public UiManager UiManager;
     [HideInInspector] public PlayerControler Player;
 
-    private Coroutine coroutine;
+    private Coroutine pointsCoroutine;
     private Coroutine musiccoroutine;
     [SerializeField] public AnimationCurve CameraCurve;
 
@@ -143,16 +143,16 @@ public class GameManager : MonoBehaviour
     public void StartCountingPoints()
     {
         ResetAvilablePoints();
-        if (coroutine == null)
+        if (pointsCoroutine == null)
         {
-            coroutine = StartCoroutine(CountPoints());
+            pointsCoroutine = StartCoroutine(CountPoints());
         }
     }
 
     public void StopCountingPoints()
     {
-        StopCoroutine(coroutine);
-        coroutine = null;
+        StopCoroutine(pointsCoroutine);
+        pointsCoroutine = null;
     }
 
     public void StartMusic(float time)
