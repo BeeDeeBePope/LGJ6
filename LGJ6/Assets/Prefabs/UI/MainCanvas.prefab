@@ -1045,16 +1045,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7494792569585705342, guid: 63b2152938df22f4fa5960a88760dec3,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368059828306389238, guid: 63b2152938df22f4fa5960a88760dec3,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6322900944408438712, guid: 63b2152938df22f4fa5960a88760dec3,
         type: 3}
       propertyPath: m_fontSize
@@ -1079,6 +1069,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494792569585705342, guid: 63b2152938df22f4fa5960a88760dec3,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368059828306389238, guid: 63b2152938df22f4fa5960a88760dec3,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6009093866964015036, guid: 63b2152938df22f4fa5960a88760dec3,
         type: 3}

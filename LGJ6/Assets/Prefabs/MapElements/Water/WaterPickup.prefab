@@ -75,10 +75,15 @@ PrefabInstance:
       propertyPath: PreVisuals
       value: 
       objectReference: {fileID: 2749232270282862920}
+    - target: {fileID: 432, guid: 1dc2f91d8d786df46b3f2a29b214dc95, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 48d582e764dbd8847b5455f3b4156fbd,
+        type: 3}
     - target: {fileID: 452, guid: 1dc2f91d8d786df46b3f2a29b214dc95, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b890c68441f3b934a89764ece37202d6,
+      objectReference: {fileID: 21300000, guid: 9ed25968bf25a0e40813214cbbcacfb5,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc2f91d8d786df46b3f2a29b214dc95, type: 3}

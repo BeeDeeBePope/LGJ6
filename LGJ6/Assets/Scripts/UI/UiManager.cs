@@ -74,14 +74,7 @@ namespace UI
 
         public void ToggleMusic()
         {
-            if (!AudioMixer.Muted)
-            {
-                SoundsImage.sprite = On;
-            }
-            else
-            {
-                SoundsImage.sprite = Off;
-            }
+            SoundsImage.sprite = !AudioMixer.Muted ? On : Off;
         }
 
         public void QuitGame()

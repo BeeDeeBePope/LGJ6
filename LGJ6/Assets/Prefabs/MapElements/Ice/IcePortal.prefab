@@ -79,12 +79,34 @@ PrefabInstance:
       propertyPath: PostVisuals
       value: 
       objectReference: {fileID: 402225354594479106}
+    - target: {fileID: 114, guid: bcbf57d30aa5f4b49b9050b29f4edd57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 406, guid: bcbf57d30aa5f4b49b9050b29f4edd57, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406, guid: bcbf57d30aa5f4b49b9050b29f4edd57, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021588511552745535, guid: bcbf57d30aa5f4b49b9050b29f4edd57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2002569102016590834, guid: bcbf57d30aa5f4b49b9050b29f4edd57,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9c8d0deaa4d0d594b9cde2f6e2cd9c27,
+      objectReference: {fileID: 21300000, guid: 9d0f7cfc9d5a85e42a4b3ab1585ae27b,
         type: 3}
+    - target: {fileID: 2002569102016590834, guid: bcbf57d30aa5f4b49b9050b29f4edd57,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 399, guid: bcbf57d30aa5f4b49b9050b29f4edd57, type: 3}
       propertyPath: m_Sprite
       value: 

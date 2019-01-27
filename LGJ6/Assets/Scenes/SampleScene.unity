@@ -423,11 +423,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 4908895931232799537, guid: 68b53f0306e13274b83d8a4687c9f839,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4908895931232798925, guid: 68b53f0306e13274b83d8a4687c9f839,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1030,111 +1025,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[0].tangentMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[1].time
-      value: 0.29971313
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[1].value
-      value: 0.074316554
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[1].tangentMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[1].inSlope
-      value: 0.43895417
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[1].outSlope
-      value: 0.43895417
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[1].inWeight
-      value: 0.23108917
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[1].outWeight
-      value: 0.11934161
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[2].time
-      value: 0.80099005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[2].value
-      value: 0.85704195
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[2].inSlope
-      value: 1.6685921
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[2].outSlope
-      value: 1.6685921
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[2].inWeight
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[2].outWeight
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[3].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[3].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[3].inSlope
-      value: 0.14277375
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[3].outSlope
-      value: 0.14277375
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297761099907241149, guid: 611632dd906448f4fb222aa86aee80eb,
-        type: 3}
-      propertyPath: CameraCurve.m_Curve.Array.data[3].inWeight
-      value: 0.4756054
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 611632dd906448f4fb222aa86aee80eb, type: 3}
