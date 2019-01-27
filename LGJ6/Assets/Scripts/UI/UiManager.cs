@@ -21,6 +21,23 @@ namespace UI
         public Sprite Off;
         public AudioMixerVolumeController AudioMixer;
 
+        public void Awake()
+        {
+            if (AudioMixer.Muted)
+            {
+                SoundsImage.sprite = Off;
+                GameManager.Instance.soundSource.volume = 0;
+                GameManager.Instance.musicSource.volume = 0;
+            }
+            else
+            {
+                SoundsImage.sprite = On;
+                GameManager.Instance.soundSource.volume = 1;
+                GameManager.Instance.musicSource.volume = 1;
+            }
+        }
+
+
         public void ShowMainMenu()
         {
             MainMenu.SetActive(true);
@@ -60,7 +77,7 @@ namespace UI
         public void SetScore(int score)
         {
             scoretext.text = score.ToString();
-            if(score > highscore.value)
+            if (score > highscore.value)
             {
                 highscore.value = score;
             }
@@ -74,7 +91,20 @@ namespace UI
 
         public void ToggleMusic()
         {
-            SoundsImage.sprite = !AudioMixer.Muted ? On : Off;
+            AudioMixer.Muted = !AudioMixer.Muted;
+
+            if (AudioMixer.Muted)
+            {
+                SoundsImage.sprite = Off;
+                GameManager.Instance.soundSource.volume = 0;
+                GameManager.Instance.musicSource.volume = 0;
+            }
+            else
+            {
+                SoundsImage.sprite = On;
+                GameManager.Instance.soundSource.volume = 1;
+                GameManager.Instance.musicSource.volume = 1;
+            }
         }
 
         public void QuitGame()

@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 7262160129470152600, guid: 31022aa1953ca494bb0b4a9ea39ab619,
         type: 3}
       propertyPath: m_Name
-      value: DeathElement
+      value: CityDeathElement
       objectReference: {fileID: 0}
     - target: {fileID: 651019507499096403, guid: 31022aa1953ca494bb0b4a9ea39ab619,
         type: 3}
@@ -67,5 +67,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 210296750288158424, guid: 31022aa1953ca494bb0b4a9ea39ab619,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bee858e1b027b7f4da376137c5644f4e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31022aa1953ca494bb0b4a9ea39ab619, type: 3}
