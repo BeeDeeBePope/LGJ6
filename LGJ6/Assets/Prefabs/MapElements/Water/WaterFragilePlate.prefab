@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 7050608785566651890, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
         type: 3}
       propertyPath: m_Name
-      value: FragilePlate
+      value: WaterFragilePlate
       objectReference: {fileID: 0}
     - target: {fileID: 4490180657322865266, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
         type: 3}
@@ -67,5 +67,39 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3939173466071158535, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
+        type: 3}
+      propertyPath: PreVisuals
+      value: 
+      objectReference: {fileID: 79062547123660099}
+    - target: {fileID: 3939173466071158535, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
+        type: 3}
+      propertyPath: PostVisuals
+      value: 
+      objectReference: {fileID: 79062547123660274}
+    - target: {fileID: 4135961584773278384, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 884a9d2f1812c684bb3ebc37be4b5a4a,
+        type: 3}
+    - target: {fileID: 3107878104940391269, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b890c68441f3b934a89764ece37202d6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a7fe54b9a8b6bf4590499abc6f5d109, type: 3}
+--- !u!1 &79062547123660099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2067944321793713014, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
+    type: 3}
+  m_PrefabInstance: {fileID: 79062547123660065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &79062547123660274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8905958957373324016, guid: 8a7fe54b9a8b6bf4590499abc6f5d109,
+    type: 3}
+  m_PrefabInstance: {fileID: 79062547123660065}
+  m_PrefabAsset: {fileID: 0}
