@@ -162,7 +162,7 @@ namespace Environment
 
         IEnumerator WaitForDestroy(GameObject game)
         {
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(5f);
             Destroy(game);
         }
 

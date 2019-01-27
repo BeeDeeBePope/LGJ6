@@ -33,6 +33,8 @@ namespace Environment
 
         public void Rotate(Vector2 direction)
         {
+            GameManager.Instance.StopCountingPoints();
+
             planes = new List<GameObject>();
             Transform[] trans = GetComponentsInChildren<Transform>();
             foreach (Transform transform in trans)
@@ -62,10 +64,12 @@ namespace Environment
 
                     transform.rotation = Quaternion.identity;
                     mapGenerator.ChangeMainBorder(game);
+
+
                     unityEvent.Invoke();
 
+
                     GameManager.Instance.AddPointsForNewBoard();
-                    GameManager.Instance.StopCountingPoints();
                     GameManager.Instance.StartCountingPoints();
 
                     break;

@@ -40,7 +40,7 @@ namespace Environment.MapElements
                 CubeRotator.Instance.unityEvent.AddListener(() =>
                 {
                     Destination.Spawn(other.gameObject);
-                    pl.ShowPlayer();
+                    pl.ShowPlayer(0.6f);
                 });
             }
         }
