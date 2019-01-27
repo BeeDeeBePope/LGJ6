@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aa79500eba2254ea047627f1ae6f61, type: 3}
   m_Name: AudioMixerVolumeController
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  VolumeParameterName: 
+  audioMixer: {fileID: 24100000, guid: e174e021673fe51409d2517f251046f3, type: 2}
+  VolumeParameterName: Volume
   muted: 0
