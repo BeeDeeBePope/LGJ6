@@ -1,5 +1,7 @@
-﻿using TMPro;
+﻿using RichUnity.Audio;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 namespace UI
@@ -17,7 +19,7 @@ namespace UI
         public Image SoundsImage;
         public Sprite On;
         public Sprite Off;
-        public ScriptableObject AudioMixer;
+        public AudioMixerVolumeController AudioMixer;
 
         public void ShowMainMenu()
         {
@@ -72,7 +74,7 @@ namespace UI
 
         public void ToggleMusic()
         {
-            if (!AudioMixer.)
+            if (!AudioMixer.Muted)
             {
                 SoundsImage.sprite = On;
             }
