@@ -46,11 +46,11 @@ MonoBehaviour:
   bioms:
   - identitycolor: {r: 1, g: 0.64, b: 0, a: 0}
     sprites:
-    - {fileID: 8731838253632565509, guid: cd31d34aed8826743948192f2e62d9e7, type: 3}
+    - {fileID: 2154366082322599457, guid: cd31d34aed8826743948192f2e62d9e7, type: 3}
     - {fileID: 5927262639950424775, guid: e497909d4cbe6c84eb732c28702c9529, type: 3}
     - {fileID: 402225354594479124, guid: f92854e0d8743a64195185cbcaa98ca5, type: 3}
     - {fileID: 2749232270282862925, guid: 57addc61cbf4977449213c5381f2198d, type: 3}
-    - {fileID: 6971617999159898323, guid: a1f806883fff30c45b65beedeecc31ae, type: 3}
+    - {fileID: 79062547123660187, guid: a1f806883fff30c45b65beedeecc31ae, type: 3}
   - identitycolor: {r: 1, g: 0, b: 0, a: 0}
     sprites:
     - {fileID: 8731838253632565509, guid: 874e5cf3490940c4894f4e25cfbbaa6a, type: 3}
