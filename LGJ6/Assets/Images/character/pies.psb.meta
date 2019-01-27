@@ -2,77 +2,76 @@ fileFormatVersion: 2
 guid: 453175f0405322b449541a5f1b24ce52
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: noga przednia tyl_GO/noga przednia tyl_GO
-    100002: noga przednia tyl_GO/noga przednia tyl_GO/glowa
-    100004: noga przednia tyl_GO/noga przednia tyl_GO/noga przednia przod
-    100006: noga przednia tyl_GO/noga przednia tyl_GO/noga przednia tyl
-    100008: noga przednia tyl_GO/noga przednia tyl_GO/noga tylnia przod
-    100010: noga przednia tyl_GO/noga przednia tyl_GO/noga tylnia tyl
-    100012: noga przednia tyl_GO/noga przednia tyl_GO/ogonek
-    100014: noga przednia tyl_GO/noga przednia tyl_GO/tlow
-    100016: noga przednia tyl_GO/noga przednia tyl_GO/bone_1
-    100018: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_2
-    100020: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_2/bone_3
-    100022: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_15
-    100024: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_15/bone_16
-    100030: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_15/bone_16/bone_17
-    100032: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_18
-    100034: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_18/bone_19
-    100036: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_18/bone_19/bone_20
-    100038: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_21
-    100040: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_21/bone_22
-    100042: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_14
-    100052: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_21/bone_22/bone_23
-    100054: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_24
-    100056: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_24/bone_25
-    100058: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_24/bone_25/bone_26
-    400000: noga przednia tyl_GO/noga przednia tyl_GO/Transform
-    400002: noga przednia tyl_GO/noga przednia tyl_GO/glowa/Transform
-    400004: noga przednia tyl_GO/noga przednia tyl_GO/noga przednia przod/Transform
-    400006: noga przednia tyl_GO/noga przednia tyl_GO/noga przednia tyl/Transform
-    400008: noga przednia tyl_GO/noga przednia tyl_GO/noga tylnia przod/Transform
-    400010: noga przednia tyl_GO/noga przednia tyl_GO/noga tylnia tyl/Transform
-    400012: noga przednia tyl_GO/noga przednia tyl_GO/ogonek/Transform
-    400014: noga przednia tyl_GO/noga przednia tyl_GO/tlow/Transform
-    400016: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/Transform
-    400018: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_2/Transform
-    400020: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_2/bone_3/Transform
-    400022: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_15/Transform
-    400024: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_15/bone_16/Transform
-    400030: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_15/bone_16/bone_17/Transform
-    400032: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_18/Transform
-    400034: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_18/bone_19/Transform
-    400036: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_18/bone_19/bone_20/Transform
-    400038: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_21/Transform
-    400040: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_21/bone_22/Transform
-    400042: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_14/Transform
-    400052: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_21/bone_22/bone_23/Transform
-    400054: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_24/Transform
-    400056: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_24/bone_25/Transform
-    400058: noga przednia tyl_GO/noga przednia tyl_GO/bone_1/bone_24/bone_25/bone_26/Transform
+    100026: Layer 1_GO/Layer 1_GO
+    100028: Layer 1_GO/Layer 1_GO/bone_1
+    100044: Layer 1_GO/Layer 1_GO/bone_1/bone_2
+    100046: Layer 1_GO/Layer 1_GO/bone_1/bone_2/bone_3
+    100048: Layer 1_GO/Layer 1_GO/bone_1/bone_14
+    100050: Layer 1_GO/Layer 1_GO/bone_1/bone_15
+    100060: Layer 1_GO/Layer 1_GO/bone_1/bone_15/bone_16
+    100062: Layer 1_GO/Layer 1_GO/bone_1/bone_15/bone_16/bone_17
+    100064: Layer 1_GO/Layer 1_GO/bone_1/bone_18
+    100066: Layer 1_GO/Layer 1_GO/bone_1/bone_18/bone_19
+    100068: Layer 1_GO/Layer 1_GO/bone_1/bone_18/bone_19/bone_20
+    100070: Layer 1_GO/Layer 1_GO/bone_1/bone_21
+    100072: Layer 1_GO/Layer 1_GO/bone_1/bone_21/bone_22
+    100074: Layer 1_GO/Layer 1_GO/bone_1/bone_21/bone_22/bone_23
+    100076: Layer 1_GO/Layer 1_GO/bone_1/bone_24
+    100078: Layer 1_GO/Layer 1_GO/bone_1/bone_24/bone_25
+    100080: Layer 1_GO/Layer 1_GO/bone_1/bone_24/bone_25/bone_26
+    100082: Layer 1_GO/Layer 1_GO/glowa
+    100084: Layer 1_GO/Layer 1_GO/Layer 1
+    100086: Layer 1_GO/Layer 1_GO/noga przednia przod
+    100088: Layer 1_GO/Layer 1_GO/noga przednia tyl
+    100090: Layer 1_GO/Layer 1_GO/noga tylnia przod
+    100092: Layer 1_GO/Layer 1_GO/noga tylnia tyl
+    100094: Layer 1_GO/Layer 1_GO/ogonek
+    400026: Layer 1_GO/Layer 1_GO/Transform
+    400028: Layer 1_GO/Layer 1_GO/bone_1/Transform
+    400044: Layer 1_GO/Layer 1_GO/bone_1/bone_2/Transform
+    400046: Layer 1_GO/Layer 1_GO/bone_1/bone_2/bone_3/Transform
+    400048: Layer 1_GO/Layer 1_GO/bone_1/bone_14/Transform
+    400050: Layer 1_GO/Layer 1_GO/bone_1/bone_15/Transform
+    400060: Layer 1_GO/Layer 1_GO/bone_1/bone_15/bone_16/Transform
+    400062: Layer 1_GO/Layer 1_GO/bone_1/bone_15/bone_16/bone_17/Transform
+    400064: Layer 1_GO/Layer 1_GO/bone_1/bone_18/Transform
+    400066: Layer 1_GO/Layer 1_GO/bone_1/bone_18/bone_19/Transform
+    400068: Layer 1_GO/Layer 1_GO/bone_1/bone_18/bone_19/bone_20/Transform
+    400070: Layer 1_GO/Layer 1_GO/bone_1/bone_21/Transform
+    400072: Layer 1_GO/Layer 1_GO/bone_1/bone_21/bone_22/Transform
+    400074: Layer 1_GO/Layer 1_GO/bone_1/bone_21/bone_22/bone_23/Transform
+    400076: Layer 1_GO/Layer 1_GO/bone_1/bone_24/Transform
+    400078: Layer 1_GO/Layer 1_GO/bone_1/bone_24/bone_25/Transform
+    400080: Layer 1_GO/Layer 1_GO/bone_1/bone_24/bone_25/bone_26/Transform
+    400082: Layer 1_GO/Layer 1_GO/glowa/Transform
+    400084: Layer 1_GO/Layer 1_GO/Layer 1/Transform
+    400086: Layer 1_GO/Layer 1_GO/noga przednia przod/Transform
+    400088: Layer 1_GO/Layer 1_GO/noga przednia tyl/Transform
+    400090: Layer 1_GO/Layer 1_GO/noga tylnia przod/Transform
+    400092: Layer 1_GO/Layer 1_GO/noga tylnia tyl/Transform
+    400094: Layer 1_GO/Layer 1_GO/ogonek/Transform
     2800000: pies
-    11400000: noga przednia tyl_GO/noga przednia tyl_GO/glowa/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400002: noga przednia tyl_GO/noga przednia tyl_GO/noga przednia przod/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400004: noga przednia tyl_GO/noga przednia tyl_GO/noga przednia tyl/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400006: noga przednia tyl_GO/noga przednia tyl_GO/noga tylnia przod/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400008: noga przednia tyl_GO/noga przednia tyl_GO/noga tylnia tyl/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400010: noga przednia tyl_GO/noga przednia tyl_GO/ogonek/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    11400012: noga przednia tyl_GO/noga przednia tyl_GO/tlow/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
-    21200000: noga przednia tyl_GO/noga przednia tyl_GO/glowa/SpriteRenderer
-    21200002: noga przednia tyl_GO/noga przednia tyl_GO/noga przednia przod/SpriteRenderer
-    21200004: noga przednia tyl_GO/noga przednia tyl_GO/noga przednia tyl/SpriteRenderer
-    21200006: noga przednia tyl_GO/noga przednia tyl_GO/noga tylnia przod/SpriteRenderer
-    21200008: noga przednia tyl_GO/noga przednia tyl_GO/noga tylnia tyl/SpriteRenderer
-    21200010: noga przednia tyl_GO/noga przednia tyl_GO/ogonek/SpriteRenderer
-    21200012: noga przednia tyl_GO/noga przednia tyl_GO/tlow/SpriteRenderer
+    11400014: Layer 1_GO/Layer 1_GO/glowa/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400016: Layer 1_GO/Layer 1_GO/noga przednia przod/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400018: Layer 1_GO/Layer 1_GO/noga przednia tyl/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400020: Layer 1_GO/Layer 1_GO/noga tylnia przod/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400022: Layer 1_GO/Layer 1_GO/noga tylnia tyl/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    11400024: Layer 1_GO/Layer 1_GO/ogonek/MonoBehaviour-UnityEngine.Experimental.U2D.Animation.SpriteSkin
+    21200014: Layer 1_GO/Layer 1_GO/glowa/SpriteRenderer
+    21200016: Layer 1_GO/Layer 1_GO/Layer 1/SpriteRenderer
+    21200018: Layer 1_GO/Layer 1_GO/noga przednia przod/SpriteRenderer
+    21200020: Layer 1_GO/Layer 1_GO/noga przednia tyl/SpriteRenderer
+    21200022: Layer 1_GO/Layer 1_GO/noga tylnia przod/SpriteRenderer
+    21200024: Layer 1_GO/Layer 1_GO/noga tylnia tyl/SpriteRenderer
+    21200026: Layer 1_GO/Layer 1_GO/ogonek/SpriteRenderer
     21300000: glowa
-    21300002: tlow
     21300004: noga tylnia przod
     21300006: noga przednia przod
     21300008: ogonek
     21300010: noga tylnia tyl
     21300012: noga przednia tyl
-    100100000: noga przednia tyl_GO
+    21300014: Layer 1
+    100100002: Layer 1_GO
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -670,548 +669,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -541, y: 552}
-  - name: tlow
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 10
-      y: 229
-      width: 601
-      height: 477
-    spriteID: e9953a5b7a274a642b94b701b7dc4257
-    spriteBone:
-    - name: bone_1
-      position: {x: 527.1952, y: 122.12201, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9986916, w: 0.05113738}
-      length: 411.91064
-      parentId: -1
-    - name: bone_2
-      position: {x: 411.91077, y: -0.000052404965, z: 0}
-      rotation: {x: 0, y: 0, z: -0.64451736, w: 0.7645897}
-      length: 216.3495
-      parentId: 0
-    spriteOutline: []
-    vertices:
-    - position: {x: 537, y: 5}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 579.31396, y: 17.962006}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 588, y: 26.873993}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 595.344, y: 55.656006}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 595.518, y: 124.49298}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 585.296, y: 164.80899}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 576.00903, y: 176.526}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 544.228, y: 205}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 489.267, y: 224.268}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 451.222, y: 228.42001}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 383.004, y: 233.88}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 294.93237, y: 240.30151}
-      boneWeight:
-        weight0: 0.9297544
-        weight1: 0.07024562
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 1
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 232.01738, y: 258.59802}
-      boneWeight:
-        weight0: 0.5903895
-        weight1: 0.4096105
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 211.15898, y: 289.14548}
-      boneWeight:
-        weight0: 0.8720616
-        weight1: 0.12793839
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 186.10147, y: 354.62302}
-      boneWeight:
-        weight0: 0.9436557
-        weight1: 0.056344274
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 170.04149, y: 419.37903}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 146.67802, y: 438.10843}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 137.41628, y: 477}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 68.473694, y: 477}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 6.669706, y: 473.93793}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 0.44000244, y: 452.20703}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 1.1709207, y: 377.76883}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 26.664192, y: 346.6803}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 33.165424, y: 280.32773}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 19.459673, y: 230.23903}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 9.835999, y: 163.613}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 12.09052, y: 127.60852}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 34.95401, y: 81.345}
-      boneWeight:
-        weight0: 0.8668948
-        weight1: 0.13310522
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 52.548996, y: 65}
-      boneWeight:
-        weight0: 0.7236185
-        weight1: 0.2763815
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 86.196, y: 56.799988}
-      boneWeight:
-        weight0: 0.63965786
-        weight1: 0.36034214
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 1
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 158.83194, y: 63.579597}
-      boneWeight:
-        weight0: 0.929829
-        weight1: 0.07017106
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 1
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 180.35844, y: 35.84453}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 219.54199, y: 18.459}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 267.301, y: 20.931}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 308.99902, y: 35.14803}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 369.38248, y: 54.38952}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 435.6325, y: 60.169525}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 447.497, y: 33}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 473.86603, y: 10.579507}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 509.466, y: 4.951996}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 122.41711, y: 274.90332}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 244.07025, y: 148.88988}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 485.09146, y: 123.615875}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 358.23584, y: 141.30972}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 0
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 98.79424, y: 368.9245}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 133.17532, y: 168.16727}
-      boneWeight:
-        weight0: 0.5803422
-        weight1: 0.41965783
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    - position: {x: 35.068752, y: 314.5908}
-      boneWeight:
-        weight0: 1
-        weight1: 0
-        weight2: 0
-        weight3: 0
-        boneIndex0: 1
-        boneIndex1: 0
-        boneIndex2: 0
-        boneIndex3: 0
-    spritePhysicsOutline: []
-    indices: 2d0000001a000000190000002200000021000000290000002a000000250000002400000023000000220000002b0000002a0000002700000026000000270000002a00000000000000030000000200000001000000000000000300000001000000250000002a00000026000000000000002a000000030000002b000000290000000b0000002b00000024000000230000002b0000002200000029000000090000002b0000000a000000290000000c0000000b0000002b0000000b0000000a000000290000002d0000000c00000005000000040000002a000000030000002a0000000400000006000000050000002a00000008000000070000002a000000060000002a0000000700000009000000080000002a0000002a0000002b000000090000002b0000002a00000024000000200000002900000021000000280000000e0000000d000000180000002d000000190000002800000018000000170000001a0000002d0000001b0000002d000000280000000c0000002d0000001e0000001d00000018000000280000002d0000002d0000001d0000001b000000280000000d0000000c0000001d0000001c0000001b0000002d000000290000001e000000290000001f0000001e0000002e00000028000000170000002c00000015000000120000001300000012000000140000001500000014000000120000002c0000002e000000160000002c0000000e00000028000000280000002e0000002c0000000f0000000e0000002c0000001000000012000000110000002c000000100000000f0000002c000000120000001000000016000000150000002c000000200000001f00000029000000
-    edges:
-    - {x: 1, y: 0}
-    - {x: 2, y: 1}
-    - {x: 3, y: 2}
-    - {x: 4, y: 3}
-    - {x: 5, y: 4}
-    - {x: 6, y: 5}
-    - {x: 7, y: 6}
-    - {x: 8, y: 7}
-    - {x: 9, y: 8}
-    - {x: 9, y: 10}
-    - {x: 10, y: 11}
-    - {x: 11, y: 12}
-    - {x: 12, y: 13}
-    - {x: 13, y: 14}
-    - {x: 14, y: 15}
-    - {x: 15, y: 16}
-    - {x: 16, y: 17}
-    - {x: 19, y: 18}
-    - {x: 20, y: 19}
-    - {x: 21, y: 20}
-    - {x: 22, y: 21}
-    - {x: 23, y: 24}
-    - {x: 25, y: 24}
-    - {x: 25, y: 26}
-    - {x: 27, y: 26}
-    - {x: 28, y: 27}
-    - {x: 28, y: 29}
-    - {x: 30, y: 29}
-    - {x: 31, y: 30}
-    - {x: 32, y: 31}
-    - {x: 33, y: 32}
-    - {x: 34, y: 33}
-    - {x: 35, y: 34}
-    - {x: 36, y: 35}
-    - {x: 37, y: 36}
-    - {x: 38, y: 37}
-    - {x: 39, y: 38}
-    - {x: 0, y: 39}
-    - {x: 22, y: 46}
-    - {x: 23, y: 46}
-    - {x: 17, y: 18}
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -635, y: -134}
   - name: noga tylnia przod
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3672,6 +3129,27 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -501, y: 1238}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 623
+      height: 702
+    spriteID: 43069cb0d54a39246b70c0ea27e3789d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -635, y: -134}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -3694,12 +3172,12 @@ ScriptedImporter:
     spriteID: 9fac56de79e34c9488e41356665e3317
     layerID: 22
     mosaicPosition: {x: 4, y: 1189}
-  - name: tlow
-    spriteName: tlow
+  - name: Layer 1
+    spriteName: Layer 1
     isGroup: 0
     parentIndex: -1
-    spriteID: e9953a5b7a274a642b94b701b7dc4257
-    layerID: 7
+    spriteID: 43069cb0d54a39246b70c0ea27e3789d
+    layerID: 41
     mosaicPosition: {x: 4, y: 4}
   - name: noga tylnia przod
     spriteName: noga tylnia przod
@@ -3870,36 +3348,36 @@ ScriptedImporter:
       bones: 0f0000000e0000000d000000
     dimension: {x: 0, y: 0}
   boneGOs:
-  - go: {fileID: 100016, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100028, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 0
-  - go: {fileID: 100018, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100044, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 1
-  - go: {fileID: 100020, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100046, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 2
-  - go: {fileID: 100042, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100048, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 3
-  - go: {fileID: 100022, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100050, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 4
-  - go: {fileID: 100024, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100060, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 5
-  - go: {fileID: 100030, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100062, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 6
-  - go: {fileID: 100032, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100064, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 7
-  - go: {fileID: 100034, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100066, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 8
-  - go: {fileID: 100036, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100068, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 9
-  - go: {fileID: 100038, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100070, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 10
-  - go: {fileID: 100040, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100072, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 11
-  - go: {fileID: 100052, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100074, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 12
-  - go: {fileID: 100054, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100076, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 13
-  - go: {fileID: 100056, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100078, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 14
-  - go: {fileID: 100058, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
+  - go: {fileID: 100080, guid: 453175f0405322b449541a5f1b24ce52, type: 3}
     index: 15
   generateGOHierarchy: 0
