@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UI
 {
@@ -8,10 +9,15 @@ namespace UI
         public GameObject MainMenu;
         public GameObject EndGameMenu;
         public GameObject HUD;
+        public GameObject MusicToggleButtom;
         public TextMeshProUGUI scoretext;
         public TextMeshProUGUI highscoretext;
         public FloatVariable highscore;
         public TextMeshProUGUI currrentscoretext;
+        public Image SoundsImage;
+        public Sprite On;
+        public Sprite Off;
+        public ScriptableObject AudioMixer;
 
         public void ShowMainMenu()
         {
@@ -62,6 +68,18 @@ namespace UI
         public void SetCurrentPoints(int score)
         {
             currrentscoretext.text = score.ToString();
+        }
+
+        public void ToggleMusic()
+        {
+            if (!AudioMixer.)
+            {
+                SoundsImage.sprite = On;
+            }
+            else
+            {
+                SoundsImage.sprite = Off;
+            }
         }
 
         public void QuitGame()

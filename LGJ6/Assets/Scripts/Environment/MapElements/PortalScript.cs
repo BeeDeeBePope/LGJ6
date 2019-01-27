@@ -31,8 +31,12 @@ namespace Environment.MapElements
                 pl.HidePlayer();
 
                 Destination.SetArrived();
+                var dest = Destination.transform.localPosition;
+                dest.x += DirectionToVector().x;
+                dest.y = Destination.transform.position.y;
+                dest.z += DirectionToVector().y;
+                other.transform.DOLocalMove(dest, 1f).SetEase(GameManager.Instance.CameraCurve);
                 CubeRotator.Instance.Rotate(DirectionToVector());
-                //other.transform.DOMove(Destination.transform.localPosition,1f);
                 CubeRotator.Instance.unityEvent.AddListener(() =>
                 {
                     Destination.Spawn(other.gameObject);
