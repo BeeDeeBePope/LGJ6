@@ -67,5 +67,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 140, guid: 1dc2f91d8d786df46b3f2a29b214dc95, type: 3}
+      propertyPath: m_Name
+      value: IcePickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 491, guid: 1dc2f91d8d786df46b3f2a29b214dc95, type: 3}
+      propertyPath: PreVisuals
+      value: 
+      objectReference: {fileID: 2749232270282862920}
+    - target: {fileID: 452, guid: 1dc2f91d8d786df46b3f2a29b214dc95, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9c8d0deaa4d0d594b9cde2f6e2cd9c27,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc2f91d8d786df46b3f2a29b214dc95, type: 3}
+--- !u!1 &2749232270282862920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 137, guid: 1dc2f91d8d786df46b3f2a29b214dc95,
+    type: 3}
+  m_PrefabInstance: {fileID: 2749232270282863041}
+  m_PrefabAsset: {fileID: 0}

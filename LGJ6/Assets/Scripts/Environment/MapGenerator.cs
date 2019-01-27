@@ -184,7 +184,9 @@ namespace Environment
         void TailMapGeneration(GameObject border)
         {
             if (MapBuilder.Instance == null) return;
+
             int i = MapBuilder.Instance.SearchByColor(border.GetComponent<MeshRenderer>().materials[0].color);
+
             if (i == -1) i=0;
 
             int which = Random.Range(0, MapBuilder.Instance.blockColors.Length / 576);
