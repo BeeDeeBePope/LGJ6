@@ -65,6 +65,10 @@ namespace Environment
                     mapGenerator.ChangeMainBorder(game);
                     unityEvent.Invoke();
 
+                    GameManager.Instance.AddPointsForNewBoard();
+                    GameManager.Instance.StopCountingPoints();
+                    GameManager.Instance.StartCountingPoints();
+
                     break;
                 }
             }

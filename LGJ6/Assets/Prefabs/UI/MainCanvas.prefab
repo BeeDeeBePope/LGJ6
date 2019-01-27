@@ -115,6 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 7742006408693518470}
   EndGameMenu: {fileID: 1623868835694552869}
+  scoretext: {fileID: 7738362149859271726}
 --- !u!1001 &1489213803903285909
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ namespace Player
         public Collider PlayerCollider;
         public GameObject PlayerVisuals;
 
-        public int CoinCount;
+        //public int CoinCount;
 
         private void Awake()
         {
@@ -42,7 +42,7 @@ namespace Player
 
         public void AddCoin()
         {
-            CoinCount++;
+            GameManager.Instance.AddPointsForGold();
         }
     }
 }

@@ -7,6 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameObject board;
+    public float pointsForRoom=100;
+    public float pointsForGold = 25;
+    public float pointsForNewBoard = 25;
+    public float allPoints;
+
+    private float remainingPoints;
     private GameObject spawnedBoard;
 
 
@@ -17,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        
         Instance = this;
         UiManager = FindObjectOfType<UiManager>();
         Player = FindObjectOfType<PlayerControler>();
@@ -30,6 +37,8 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        allPoints = 0;
+        StartCountingPoints();
         Player.Movement.ResetSpeed();
         Player.ShowPlayer();
     }
@@ -40,12 +49,15 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
+        StopCountingPoints();
         Player.Movement.enabled = false;
+        UiManager.SetScore(Mathf.CeilToInt(allPoints));
         UiManager.ShowEndGame();
     }
 
     public void StartCountingPoints()
     {
+        ResetAvilablePoints();
         if (coroutine == null)
         {
             coroutine = StartCoroutine(CountPoints());
@@ -54,15 +66,37 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
+        allPoints = 0;
         Destroy(spawnedBoard);
+        StartCountingPoints();
         Player.Movement.ResetSpeed();
         Player.ShowPlayer();
         spawnedBoard = Instantiate(board);
     }
 
+    public void ResetAvilablePoints()
+    {
+        remainingPoints = pointsForRoom;
+    }
+
     private IEnumerator CountPoints()
     {
-        yield return null;
+        while(remainingPoints > 0)
+        {
+            yield return new WaitForSeconds(.1f);
+            remainingPoints--;
+            allPoints++;
+        }        
+    }
+
+    public void AddPointsForGold()
+    {
+        allPoints += pointsForGold;
+    }
+
+    public void AddPointsForNewBoard()
+    {
+        allPoints += pointsForNewBoard;
     }
 
     public void StopCountingPoints()

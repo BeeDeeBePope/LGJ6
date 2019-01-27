@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 namespace UI
 {
@@ -6,6 +7,7 @@ namespace UI
     {
         public GameObject MainMenu;
         public GameObject EndGameMenu;
+        public TextMeshProUGUI scoretext;
 
         public void ShowMainMenu()
         {
@@ -29,6 +31,11 @@ namespace UI
         {
             EndGameMenu.SetActive(false);
             GameManager.Instance.Restart();
+        }
+
+        public void SetScore(int score)
+        {
+            scoretext.text = score.ToString();
         }
 
         public void QuitGame()
