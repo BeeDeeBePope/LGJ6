@@ -76,6 +76,7 @@ namespace Environment.MapElements
 
             PreVisuals.SetActive(false);
             PostVisuals.SetActive(true);
+            GetComponent<PlayerKiller>().DisableOverride = false;
             Destroy(this);
         }
 
