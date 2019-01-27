@@ -26,7 +26,6 @@ namespace Environment.MapElements
             }
             if (other.CompareTag("Player"))
             {
-                Debug.Log("b");
                 arrived = true;
                 PlayerControler pl = other.GetComponent<PlayerControler>();
                 pl.HidePlayer();
@@ -68,10 +67,11 @@ namespace Environment.MapElements
         public void Spawn(GameObject player)
         {
             player.transform.rotation = transform.rotation;
-            Vector3 pos = player.transform.position;
-            pos.x = transform.position.x;
-            pos.z = transform.position.z;
-            player.transform.position = pos;
+            Debug.Log(player.GetComponent<PlayerMovement>().CurrentDirection);
+            Debug.Log(player.transform.position);
+            player.transform.position = player.transform.position + player.GetComponent<PlayerMovement>().CurrentDirection;
+            Debug.Log(player.transform.position);
+
             player.GetComponent<PlayerMovement>().SpeedUp();
 
             PreVisuals.SetActive(false);

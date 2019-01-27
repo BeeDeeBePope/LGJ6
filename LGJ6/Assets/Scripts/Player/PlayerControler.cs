@@ -20,7 +20,6 @@ namespace Player
 
         public void HidePlayer()
         {
-            Debug.Log("hide");
             PlayerVisuals.SetActive(false);
             Movement.enabled = false;
             PlayerCollider.enabled = false;
@@ -28,7 +27,6 @@ namespace Player
 
         public void ShowPlayer()
         {
-            Debug.Log("show");
             PlayerVisuals.SetActive(true);
             Movement.enabled = true;
             PlayerCollider.enabled = true;
@@ -36,7 +34,6 @@ namespace Player
 
         public void Die()
         {
-            Debug.Log("die");
             HidePlayer();
             GameManager.Instance.EndGame();
         }

@@ -66,6 +66,7 @@ namespace Environment
             }
             portals[startowyPortal].GetComponent<PortalScript>().PreVisuals.SetActive(false);
             portals[startowyPortal].GetComponent<PortalScript>().PostVisuals.SetActive(true);
+            portals[startowyPortal].GetComponent<PlayerKiller>().DisableOverride = false;
             Destroy(portals[startowyPortal].GetComponent<PortalScript>());
 
             GameManager.Instance.Player.transform.position = portals[startowyPortal].transform.position + GameManager.Instance.Player.Movement.CurrentDirection;

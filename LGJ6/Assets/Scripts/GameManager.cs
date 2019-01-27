@@ -12,6 +12,13 @@ public class GameManager : MonoBehaviour
     public float pointsForNewBoard = 25;
     public float allPoints;
 
+    public AudioSource musicsource;
+    public AudioSource soundsource;
+    public AudioClip startSound;
+    public AudioClip deathSound;
+    public AudioClip menuSound;
+    public AudioClip[] musicSound;
+
     private float remainingPoints;
     private GameObject spawnedBoard;
 
