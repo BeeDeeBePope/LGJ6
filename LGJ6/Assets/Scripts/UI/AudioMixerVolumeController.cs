@@ -1,10 +1,13 @@
-﻿using Unity.Collections;
+﻿#if UNITY_EDITOR
+using RichUnity.Audio;
+#endif
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 
 namespace RichUnity.Audio
 {
-    [CreateAssetMenu(fileName = "AudioMixerVolumeController", menuName = "Assets/Music/AudioMixer")]
+    [CreateAssetMenu(fileName = "AudioMixerVolumeController", menuName = "RichUnity/Audio/Audio Mixer Volume Controller")]
     public class AudioMixerVolumeController : ScriptableObject
     {
         [SerializeField]
