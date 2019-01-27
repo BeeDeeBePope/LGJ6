@@ -8,6 +8,8 @@ namespace UI
         public GameObject MainMenu;
         public GameObject EndGameMenu;
         public TextMeshProUGUI scoretext;
+        public TextMeshProUGUI highscoretext;
+        public FloatVariable highscore;
 
         public void ShowMainMenu()
         {
@@ -36,6 +38,11 @@ namespace UI
         public void SetScore(int score)
         {
             scoretext.text = score.ToString();
+            if(score > highscore.value)
+            {
+                highscore.value = score;
+            }
+            highscoretext.text = highscore.value.ToString();
         }
 
         public void QuitGame()
