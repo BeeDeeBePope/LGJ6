@@ -14,6 +14,7 @@ namespace Player
         private void Awake()
         {
             Movement = GetComponent<PlayerMovement>();
+            Movement.Player = this;
             PlayerCollider = GetComponent<Collider>();
         }
 
@@ -43,6 +44,20 @@ namespace Player
         public void AddCoin()
         {
             GameManager.Instance.AddPointsForGold();
+        }
+
+        public void TurnRight()
+        {
+            var scale = PlayerVisuals.transform.localScale;
+            scale.x = Mathf.Abs(scale.x) * -1;
+            PlayerVisuals.transform.localScale = scale;
+        }
+
+        public void TurnLeft()
+        {
+            var scale = PlayerVisuals.transform.localScale;
+            scale.x *= Mathf.Abs(scale.x);
+            PlayerVisuals.transform.localScale = scale;
         }
     }
 }
