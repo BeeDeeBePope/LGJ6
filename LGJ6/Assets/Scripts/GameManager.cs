@@ -92,17 +92,20 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(.1f);
             remainingPoints--;
             allPoints++;
+            UiManager.SetCurrentPoints(Mathf.CeilToInt(allPoints));
         }        
     }
 
     public void AddPointsForGold()
     {
         allPoints += pointsForGold;
+        UiManager.SetCurrentPoints(Mathf.CeilToInt(allPoints));
     }
 
     public void AddPointsForNewBoard()
     {
         allPoints += pointsForNewBoard;
+        UiManager.SetCurrentPoints(Mathf.CeilToInt(allPoints));
     }
 
     public void StopCountingPoints()
