@@ -1,0 +1,7 @@
+               Wodny		Zimowy		Las		Pustynia	Miasto		Ogieñ	
+1.(Umieranko)  Woda		Lód		Przepaœæ	Piaski		Przepaœæ	Lawa
+2.(Chodzenie)  K³adka		K³adka		Trawa		Kamieñ		Ulica		Kamieñ
+4.(Znikanie)   BK³adka		BLód		BTrawa		BKamieñ		BUlica		BKamieñ
+
+Moneta stylizowana (psie chrupki, przywieszka)
+Teleport (magiczny wir, teleport)
