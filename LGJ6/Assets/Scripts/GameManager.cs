@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using DG.Tweening;
 using Player;
 using UI;
 using UnityEngine;
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
 
     private Coroutine coroutine;
     private Coroutine musiccoroutine;
+    [SerializeField] public AnimationCurve CameraCurve;
 
     private void Awake()
     {
