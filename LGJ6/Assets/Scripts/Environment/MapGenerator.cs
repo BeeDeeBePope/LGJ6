@@ -64,6 +64,7 @@ namespace Environment
                     GameManager.Instance.Player.Movement.SetDirection(Vector2.left);
                     break;
             }
+            portals[startowyPortal].GetComponent<PortalScript>().ActiveMap();
             portals[startowyPortal].GetComponent<PortalScript>().PreVisuals.SetActive(false);
             portals[startowyPortal].GetComponent<PortalScript>().PostVisuals.SetActive(true);
             portals[startowyPortal].GetComponent<PlayerKiller>().DisableOverride = false;
@@ -204,6 +205,7 @@ namespace Environment
                         else if (k == 23) tile.GetComponentInChildren<PortalScript>().Direction = Direction.Right;
                         else if (k == 0) tile.GetComponentInChildren<PortalScript>().Direction = Direction.Left;
                     }
+
                 }
             }
         }

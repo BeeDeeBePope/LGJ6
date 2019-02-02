@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using DG.Tweening;
 
 namespace Player
 {
@@ -9,6 +11,8 @@ namespace Player
         public float increaseSpeed;
         [HideInInspector] public PlayerControler Player;
         private float baseSpeed;
+        private float timeforonegrid;
+        Coroutine onegridmove;
 
         private void Awake()
         {
@@ -17,12 +21,32 @@ namespace Player
                 CurrentDirection = transform.right;
             }
             baseSpeed = Speed;
+            timeforonegrid = 1 / (Speed);
         }
 
-        private void Update()
+        private void OnEnable()
         {
-            transform.position += CurrentDirection * Speed * Time.deltaTime;
+            onegridmove = StartCoroutine(move());
         }
+
+        private void OnDisable()
+        {
+            StopCoroutine(onegridmove);
+        }
+
+        private IEnumerator move()
+        {
+            while(true)
+            {
+                transform.DOMove(transform.position + CurrentDirection, timeforonegrid);
+                yield return new WaitForSeconds(timeforonegrid);
+            }
+        }
+
+        //private void Update()
+        //{
+        //    transform.position += CurrentDirection * Speed * Time.deltaTime;
+        //}
 
         public void SetDirection(Vector2 direction)
         {
@@ -45,11 +69,13 @@ namespace Player
         public void SpeedUp()
         {
             Speed += increaseSpeed;
+            timeforonegrid = 1 / (Speed);
         }
 
         public void ResetSpeed()
         {
             Speed = baseSpeed;
+            timeforonegrid = 1 / (Speed);
         }
     }
 }

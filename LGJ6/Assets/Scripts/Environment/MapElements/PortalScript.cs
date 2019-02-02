@@ -65,7 +65,7 @@ namespace Environment.MapElements
         public void SetArrived()
         {
             arrived = true;
-            Debug.Log("b");
+            ActiveMap();
         }
 
         public void Spawn(GameObject player)
@@ -82,6 +82,13 @@ namespace Environment.MapElements
             PostVisuals.SetActive(true);
             GetComponent<PlayerKiller>().DisableOverride = false;
             Destroy(this);
+        }
+
+        public void ActiveMap()
+        {
+            foreach(Test game in transform.parent.GetComponentsInChildren<Test>(true)){
+                game.gameObject.SetActive(true);
+            }
         }
 
         private void OnDestroy()
